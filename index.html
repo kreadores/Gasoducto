@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Gasoducto Cruz del Sur</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+ <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+ <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+ <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+ <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+ <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizLand - v3.1.0
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  
+        <!-- MODAL -->
+       
+<div id="contact-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" id="main-title">
+				 <!-- <a class="close" data-dismiss="modal">X</a>  -->
+				<h5 class="title">Formulario de solicitud de interferencia/información
+        </h5>
+			</div>
+      <div class="modal-header">
+				<!-- <a class="close" data-dismiss="modal">×</a> -->
+				<h5 class="title">Formulario de interferencia de terceros
+        </h5>
+			</div>
+			<form id="contactForm" name="contact" role="form">
+				<div class="modal-body">				
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" name="name" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" name="email" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea name="message" class="form-control"></textarea>
+					</div>					
+				</div>
+				<div class="modal-footer">					
+					<button type="button" class="btn btn-secondary text-right" data-dismiss="modal">Close</button>
+					<input type="submit" class="btn btn-primary" id="form-submit">
+          <div id="msgSubmit" class=" h3 hidden pl-5">Message Submitted!</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+  <!-- end of modal -->
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com"> info@gcds.com.uy</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span> (598) 2900 0340</span></i>
+      </div>
+      <div class="emergency d-none d-md-flex align-items-center">
+        <h5 style="margin: 10px 10px 10px 10px;">EMERGENCIAS </h5>
+        <i class=" bx bx-phone-call" style="margin: 10px 0 10px 5px;"></i>
+        <span style="margin-left: 5px; font-size: 20px;"> 0800 4321</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- <a href="index.html"> <img src="./assets/img/logo.jpg" alt="" style="width: 150px; height: 60px; margin-top: 10px;"></a> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <a href="index.html"><img class="img-fluid logo" src="assets/img/logo.jpg" alt=""></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li class="dropdown"><a href="#about"><span>Nuestra Empresa</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+            <li><a href="#about">¿Quienes somos?</a></li>
+              <li><a href="#principios">Principios y Valores</a></li>
+              <li><a href="#operaciones">Operaciones</a></li>
+              <li><a href="#">Trazado</a></li>
+            </ul>
+          <li><a class="nav-link scrollto" href="#services">Prevención de daños</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Emergencias</a></li>
+          <li><a class="nav-link scrollto" href="#ssma">S.S.M.A</a></li>
+          <li><a class="nav-link scrollto" href="#rse">RSE</a></li>
+          <li><a class="nav-link scrollto" href="#contacto">Contacto</a></li>
+          <li><a class="nav-link scrollto d-none" href="#tarifas">Tarifas comerciales</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('assets/img/carrusel/Carousel_Uno.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Gasoducto <span>Cruz del Sur</span></h2>
+                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Ingrese</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('assets/img/carrusel/DSC_1037.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Prevención de Daños</h2>
+                <p class="animate__animated animate__fadeInUp">Contáctese sin costo al <span> 0800 <b> 4321</b> </span></p>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url('assets/img/carrusel/IMG_8289.JPG');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">ATENCIÓN</h2>
+                <p class="animate__animated animate__fadeInUp" style="transform: lowercase;">Atentos a la situación de emergencia sanitaria que atraviesa el Uruguay, GASODUCTO CRUZ DEL SUR informa que ha tomado medidas para que su servicio de respuesta no se vea afectado.
+
+                  Para seguridad de todos contpactenos antes de proyectar, conectar o comenzar cualquier excavación. Nuestros técnicos informarán si existe interferencia con el sistema de gasoductos.</p>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+ 
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-4 mb-4">
+          <div class="col-md-12 col-lg-4 col-xl-4 col-xs-12 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              
+              <h4 class="title" style="margin-bottom: 50px;color: #00519e;">VÍAS DE COMUNICACIÓN / RESPUESTA INMEDIATA</h4>
+              <h3> EMERGENCIAS 0800 4321</h3>
+              <p class="description">Atención de nuestro personal especializado</p>
+              
+            </div> 
+          </div>
+          <div class="col-md-12 col-lg-4 col-xl-4 col-xs-12 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <img class="img-fluid luis" src="./assets/img/prevencion.jpg" alt="" >
+          </div>
+          </div>
+
+          <div class="col-md-12 col-lg-4 col-xl-4 col-xs-12 d-flex align-items-stretch mb-5 mb-lg-0" id="form">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"> <img src="./assets/img/previmg.png" alt=""></i></div>
+              <h4 class="title">SOLICITUD DE INFORMACION POR INTERFERENCIAS</h4>
+              <p class="description"> Hacé click para completar los datos de tu solicitud</p>
+              <div id="contact">
+                <button id="boton" type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#contact-modal">Formulario</button>
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+    </section><!-- End Featured Services Section -->
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="zoom-in">
+        <h3> Empresas que integran Gasoducto Cruz del Sur</h3>
+  
+        <div class="row">
+  
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/logo_ancap_ch.gif" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/logo_bgGroup_ch.gif" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/logo_energy_ch.gif" class="img-fluid" alt="">
+          </div>
+  
+          <div class="col-lg-3 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/logo_wintershall_ch.gif" class="img-fluid" alt="">
+          </div>
+        </div>
+  
+      </div>
+    </section><!-- Fin Clientes Section -->
+  
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2> ¿Quiénes somos?</h2>
+          <h3>Introdúzcase en <span>Gasoducto</span></h3>
+          
+        </div>
+
+        <div class="row mb-4 mt-4">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img class="img-fluid w-100" src="./assets/img/Team_gasoducto.jpg" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3 style="text-align: center;">Gasoducto Cruz del Sur S.A</h3>
+            <ul>
+              <li>
+                <i class="bx bx-expand"></i>
+                <div>
+                  <p> Es una empresa uruguaya integrada por Compañías nacionales e internacionales de larga trayectoria en la exploración, producción y distribución de gas natural en varios países del mundo.</p>
+                  <p>Es el concesionario para proyectar, construir y operar el Gasoducto Buenos Aires - Montevideo por un período de 30 años. 
+            Este sistema de transporte de gas natural se encuentra en operación desde Noviembre de 2002</p>
+                </div>
+              </li>
+            </div>
+            
+        </div>
+        <div class="row" style="margin-top: 5rem;">
+          <div class="col-lg-3 customer-data" data-aos="fade-right" data-aos-delay="100">
+            <div class="d-flex align-items-center justify-content-center pb-4">
+            <img src="assets/img/logo_ancap_ch.gif" class="img-fluid" alt="">
+          </div>
+          <div class="d-flex align-items-center justify-content-center pb-4">
+            <p>Aseguramos el abastecimiento de nuestros productos energéticos y proveemos cementos, portland y alcoholes conforme a estándares regionales de calidad, y a las necesidades de los clientes y usuarios.
+
+              Estamos orientados a mejorar la eficiencia y competitividad; propiciamos el desarrollo integral; actuamos con responsabilidad social y ambiental y estamos comprometidos con la confianza que genera nuestra empresa. </p>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+              <a href="https://www.ancap.com.uy/" class="btn-get-started-clients animate__animated animate__fadeInUp scrollto d-flex justify-content-center">Visite el sitio</a>
+            </div>
+            </div>
+         
+            <div class="col-lg-3 customer-data" data-aos="fade-right" data-aos-delay="100">
+              <div class="d-flex align-items-center justify-content-center pb-4">
+              <img src="assets/img/logoShell.png" class="img-fluid" alt="" style="width: 100px; height: 80px; padding-top: 10px;">
+            </div>
+            <div class="d-flex align-items-center justify-content-center pb-4">
+              <p>Shell es una empresa internacional con experiencia en la exploración, producción, refinación, comercialización de petróleo y gas natural.
+                Somos un grupo global de empresas de energía y petroquímica con más de 80.000 empleados en más de 70 países. Utilizamos tecnologías avanzadas y adoptamos un enfoque innovador para ayudar a construir un futuro energético sostenible.</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                  <a href="https://www.shell.com/" class="btn-get-started-clients animate__animated animate__fadeInUp scrollto d-flex justify-content-center">Visite el sitio</a>
+
+                </div>
+            </div>
+
+         
+          
+            <div class="col-lg-3 customer-data" data-aos="fade-right" data-aos-delay="100">
+              <div class="d-flex align-items-center justify-content-center pb-4">
+                <img src="assets/img/logo_energy_ch.gif" class="img-fluid" alt="">
+            </div>
+            <div class="d-flex align-items-center justify-content-center pb-4">
+              <p>Pan American Energy (PAE) empresa conformada por Bridas Corporation, sociedad integrada en partes iguales por Bridas Energy Holdings Limited (BEH) y CNOOC International Limited (CNOOC IL).
+
+                PAE es una empresa dedicada a la exploración y producción de petróleo y gas natural en el Cono Sur de América y es el segundo productor de hidrocarburos de la Argentina.</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                <a href="https://www.pan-energy.com/" class="btn-get-started-clients animate__animated animate__fadeInUp scrollto d-flex justify-content-center">Visite el sitio</a>
+              </div>
+              </div>
+
+
+          <div class="col-lg-3 customer-data" data-aos="fade-right" data-aos-delay="100">
+            <div class="d-flex align-items-center justify-content-center pb-4">
+              <img src="assets/img/logo_wintershall_ch.gif" class="img-fluid" alt="">
+          </div>
+          <div class="d-flex align-items-center justify-content-center pb-4">
+            <p>Wintershall se dedíca activamente a la búsqueda y extracción de petróleo y gas natural desde hace más de 75 años.
+
+              Wintershall focaliza sus actividades de exploración y producción en áreas estratégicas, en donde la empresa cuenta con un alto grado de especialización regional y tecnológica. Estas áreas son Europa, Norte de África, Sudamérica, Rusia y la región del Mar Caspio.</p>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+              <a href="https://wintershalldea.com/en" class="btn-get-started-clients animate__animated animate__fadeInUp scrollto d-flex justify-content-center">Visite el sitio</a>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        
+
+      </div>
+    </section>
+    <section id="principios" class="mvv">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Principios y Valores</h2>
+        </div>
+        <div class="row mt-4 mb-4">
+          <div class="col-md-12 col-lg-12 col-xl-4 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-left" data-aos-delay="200">
+              <h4 class="title" style="margin-bottom: 50px;color: #00519e;">Misión</h4>
+              <p class="description">Transportar gas natural de manera segura, eficiente y confiable, 
+                promoviendo el desarrollo de Uruguay y la región, contribuyendo a mejorar la calidad de vida de su gente y maximizando el valor de los accionistas.</p>
+              
+            </div> 
+          </div>
+          <div class="col-md-12 col-lg-12 col-xl-4 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-left" data-aos-delay="200">
+              <h4 class="title" style="margin-bottom: 50px;color: #00519e;">Visión</h4>
+              <p class="description">Ser el líder en la industria del gas natural, 
+                desarrollando nuestros negocios, nuestra tecnología y nuestra gente, y aspirando a ser reconocidos como una de las empresas referentes en el Uruguay.</p>
+            
+          </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12 col-xl-4 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-left" data-aos-delay="200">
+              <h4 class="title" style="margin-bottom: 50px;color: #00519e;">Valores</h4>
+              <ul>
+                <li>Desarrollar nuestro negocio, garantizando la gestión de la calidad, la seguridad y la preservación del medio ambiente.</li>
+                <li>Ser reconocidos como la empresa con los mayores estándares morales y conductas éticas.</li>
+                <li>Nuestra gente es la clave de nuestro éxito presente y futuro.</li>
+              </ul>
+              
+            </div>
+          </div>
+
+        </div>
+ </div>
+    </section>
+    <section id="operaciones" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Operaciones</h2>
+         
+        </div>
+        <div class="row mb-4 mt-4" id="ops_row">
+          <div class="col-lg-6" data-aos="fade-down" data-aos-delay="100">
+            <img class="operaciones" src="./assets/img/operaciones3.jpg" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3 style="text-align: center;">Actividad</h3>
+            
+            <ul>
+              <li>
+                <!-- <i class='bx bx-notepad'></i> -->
+                <div>
+                 
+                 <p>
+                  El transporte de gas natural por el Gasoducto Buenos Aires - Montevideo permite que distintos cargadores suministren gas para la generación de energía y para uso industrial, comercial y doméstico.
+                  
+                  El transporte de gas natural en Uruguay se encuentra regulado por el decreto de ley N° 78/099.
+                  
+                  El sistema operado por Gasoducto Cruz del Sur S.A. (GCDS) se extiende desde Punta Lara en Argentina hasta Montevideo y sus alrededores en Uruguay, pasando por los departamentos de Colonia, San José, Canelones y Montevideo, abasteciendo 18 localidades.
+                  
+                  Transportamos más del 95% del gas consumido en el país a lo largo de nuestro sistema de  400 kms de extensión total.</p>
+                </div>
+              </li>
+            </div>
+            
+        </div>
+        <div class="row mb-4 mt-4" id="ops_row">
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3 style="text-align: center;">Modalidades de Transporte</h3>
+            
+            <ul>
+              <li>
+                <!-- <i class='bx bx-dumbbell' ></i> -->
+                <div>
+                  <h5>Transporte firme: </h5>
+                  <p> Es el transporte de Gas que no está sujeto a interrupciones por el Transportista salvo Fuerza Mayor, cualquier mantenimiento, reparación o actos conformes con las Prácticas Prudentes de Operación de Ductos que haga necesaria esa interrupción, y según se acuerde en los respectivos contratos. </p>
+                    
+                       <h5>Transporte interrumpible:</h5>
+                       <p>Es el transporte de Gas que está sujeto a interrupción por el Transportista, en las condiciones determinadas por el Marco Regulatorio. </p>
+                 
+                
+                  
+                </div>
+              </li>
+            </div>
+          <div class="col-lg-6" data-aos="fade-down" data-aos-delay="100">
+            <img class="operaciones" src="./assets/img/operaciones.jpg" alt="">
+          </div>
+          
+            
+        </div>
+
+
+      </div>
+      </section>
+
+    <!-- ======= Clientes Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="zoom-in">
+        <h3> Clientes preferenciales</h3>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/logo_ancap_ch.gif" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/logo_bgGroup_ch.gif" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/logo_energy_ch.gif" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/logo_wintershall_ch.gif" class="img-fluid" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section> 
+    <!-- Fin Clientes Section
+
+    <! ======= Services Section ======= -->
+     
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contacto" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <h3><span>Vías de Comunicación</span></h3>
+          <p>Respuesta inmediata</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-4 col-xl-4 col-md-12 col-xs-12">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Oficinas Administrativas</h3>
+              <p>La Cumparsita 1373, Piso 4 Edificio La Cumparsita <br>
+                Montevideo - Uruguay C.P. 11.200  <br>
+                Tel:(598) 2304 9357
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-xl-4 col-md-12 col-xs-12">
+            <div class="info-box  mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Base de Mantenimiento - Montevideo</h3>
+              <p>Av. Agraciada 3334 <br>
+                C.P. 11700 Montevideo-Uruguay <br>
+                tel: (598) 2304 9357 FAX Int. 15</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-xl-4 col-md-12 col-xs-12">
+            <div class="info-box  mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Base de Mantenimiento - Colonia</h3>
+              <p>Av Ensanchada s/n-Balneario Santa Ana <br>
+                Colonia-Uruguay <br>
+                tel: (598) 4588 2297</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6">
+            
+            
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su correo electronico" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Titulo:" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Escriba su mensaje.." required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Cargando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Su mensaje fue enviado. Muchas gracias!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-sm-12 footer-contact">
+          <div class="brand d-inline-flex">
+          <img class="img-fluid" src="assets/img/logo.jpg" alt="">
+          <h4>Gasoducto Cruz del Sur</h4>
+        </div>
+          <p>
+            La Cumparsita 1373, Piso 4. <br> Edificio La Cumparsita <br>
+            C.P. 11.200<br>
+            Montevideo - Uruguay<br><br>
+            <strong>Phone:</strong>(598) 2304 9357<br>
+            <strong>Email:</strong>  info@gcds.com.uy<br>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 footer-links">
+          
+          <h4>Legal</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">S.S.M.A</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">RSE</a></li>
+            
+          </ul>
+        </div>
+
+
+        <div class="col-lg-4 col-md-4 col-sm-12 footer-links">
+          <h4>Institucional</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#hero">Inicio</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#about">La Empresa</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#services">Prevención de Daños</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Emergencias</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+  <section id="footer-bottom" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com"> info@gcds.com.uy</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span> (598) 2900 0340</span></i>
+      </div>
+      <div class="emergency d-none d-md-flex align-items-center">
+        <h5 style="margin: 10px 10px 10px 10px;">EMERGENCIAS </h5>
+        <i class=" bx bx-phone-call" style="margin: 10px 0 10px 5px;"></i>
+        <span style="margin-left: 5px; font-size: 20px;"> 0800 4321</span>
+      </div>
+    </div>
+  </section>
+  
+<!-- End Footer -->
+  
+  
+
+
+        
+
+   <div id="preloader"></div> 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/js/main.js"></script>
+
+  <!-- Template Main JS File -->
+  <script>
+    $('#contact-modal').on('shown.bs.modal', function () {
+  $('boton').trigger('focus')
+})
+  </script>
+ 
+
+</body>
+
+</html>
