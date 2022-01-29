@@ -189,7 +189,6 @@ h6 {
   color: white;
 }
 
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -220,8 +219,6 @@ h6 {
 #header .logo a span {
   color: rgb(95, 190, 220);
 }
-
- 
 
 .scrolled-offset {
   margin-top: 70px;
@@ -522,7 +519,8 @@ h6 {
   text-align: left;
 }
 @media (max-width: 992px) {
-  #hero, #hero .carousel-item {
+  #hero,
+  #hero .carousel-item {
     height: calc(100vh - 70px);
   }
   #hero .carousel-content.container {
@@ -551,7 +549,6 @@ h6 {
   font-size: bold;
   font-size: 50px;
   margin-left: 20px;
-
 }
 #hero .carousel-inner .carousel-item {
   transition-property: opacity;
@@ -575,10 +572,12 @@ h6 {
   left: 0;
   transform: translate3d(0, 0, 0);
 }
-#hero .carousel-control-prev, #hero .carousel-control-next {
+#hero .carousel-control-prev,
+#hero .carousel-control-next {
   width: 10%;
 }
-#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
   background: none;
   font-size: 48px;
   line-height: 1;
@@ -614,7 +613,8 @@ h6 {
   }
 }
 @media (max-height: 500px) {
-  #hero, #hero .carousel-item {
+  #hero,
+  #hero .carousel-item {
     height: 120vh;
   }
 }
@@ -622,12 +622,11 @@ h6 {
   #hero p {
     width: 60%;
   }
-  #hero .carousel-control-prev, #hero .carousel-control-next {
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
     width: 5%;
   }
 }
-
-
 
 /*--------------------------------------------------------------
 # Sections General
@@ -663,7 +662,7 @@ section {
   margin: 15px 0 0 0;
   font-size: 32px;
   font-weight: 700;
-  color:  rgb(95, 190, 220);
+  color: rgb(95, 190, 220);
 }
 
 .section-title h3 span {
@@ -708,7 +707,7 @@ section {
   list-style: none;
   padding: 0;
   margin: 0;
-   font-size: 14px; 
+  font-size: 14px;
 }
 
 .breadcrumbs ol li + li {
@@ -854,7 +853,7 @@ section {
   font-weight: 600;
   font-size: 26px;
   text-align: center;
-  color:  rgb(95, 190, 220);
+  color: rgb(95, 190, 220);
 }
 
 .about .content ul {
@@ -952,7 +951,7 @@ Mision, vision y valores
 .mvv .icon-box::before {
   content: "";
   position: absolute;
-  background:  #cbe0fb;
+  background: #cbe0fb;
   right: 0;
   left: 0;
   bottom: 0;
@@ -970,7 +969,7 @@ Mision, vision y valores
   border-radius: 0px;
   opacity: 0.5;
 }
-.mvv .icon-box .title:hover{
+.mvv .icon-box .title:hover {
   color: #fff;
   font-weight: 600;
 }
@@ -981,24 +980,20 @@ Mision, vision y valores
 # Operaciones
 --------------------------------------------------------------*/
 
- #operaciones .operaciones {
-
+#operaciones .operaciones {
   width: 540px;
   height: 300px;
 }
- #ops_row {
+#ops_row {
   display: flex;
   align-items: center !important;
   justify-content: center !important;
-  
-}  
+}
 @media screen and (max-width: 1200px) {
   #operaciones .operaciones {
-
     width: 100%;
     height: 100%;
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -1070,48 +1065,45 @@ Mision, vision y valores
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
- .services .icon-box {
-   padding: 60px 20px; 
+.services .icon-box {
+  padding: 60px 20px;
   transition: all ease-in-out 0.3s;
-  background:  rgb(95, 190, 220);
-} 
+  background: rgb(95, 190, 220);
+}
 
 #icon_box_especial h4 {
   color: white;
 }
 
-  .services .icon-box .images {
-    width: 100%;
-    margin-right: 1rem;
-    display: flex;
-    justify-content: space-between;
+.services .icon-box .images {
+  width: 100%;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
   transition: ease-in-out 0.3s;
-} 
+}
 
 .services .icon-box .pictures {
   width: 250px;
   height: 250px;
   transition: ease-in-out 0.3s;
-} 
-@media screen and (max-width: 778px){
-  
+}
+@media screen and (max-width: 778px) {
   .services .icon-box .images {
     display: block;
-  transition: ease-in-out 0.3s;
-} 
+    transition: ease-in-out 0.3s;
+  }
 
-  
   .services .icon-box .pictures {
     width: 100%;
     height: 100%;
     margin-top: 20px;
     transition: ease-in-out 0.3s;
-  } 
-
+  }
 }
-.services .icon-box .ul-list{
+.services .icon-box .ul-list {
   display: flex;
-  
+
   margin-bottom: 35px;
   margin-top: 30px;
   padding: 0;
@@ -1124,12 +1116,12 @@ Mision, vision y valores
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }  */
- .h2Services {
+.h2Services {
   color: rgb(95, 190, 220);
   transition: ease-in-out 0.3s;
   text-align: center;
   font-size: 2.5rem;
-} 
+}
 .services .title {
   font-size: 24px;
   text-align: center;
@@ -1153,7 +1145,7 @@ Mision, vision y valores
   font-size: 19px;
   padding: 10px 0 30px 0;
 }
- .services-cards p {
+.services-cards p {
   line-height: 14px;
   font-size: 14px;
   padding: 10px 20px 10px 20px;
@@ -1172,12 +1164,12 @@ Mision, vision y valores
 .services .icon-box:hover .icon {
   border-color: rgb(95, 190, 220);
 }
- 
+
 @media (min-width: 768px) and (max-width: 1200px) {
   .services p {
     width: 80%;
   }
-} 
+}
 
 @media (max-width: 768px) {
   .services img {
@@ -1210,7 +1202,7 @@ Mision, vision y valores
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-  padding: 200px 0 150px 0 ;
+  padding: 200px 0 150px 0;
   background: url("../img/gasoducto1.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1695,7 +1687,6 @@ Mision, vision y valores
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
   padding: 20px 0 30px 0;
-  
 }
 
 .contact .info-box i {
@@ -1720,7 +1711,7 @@ Mision, vision y valores
   margin-bottom: 0;
 }
 
- .contact .php-email-form {
+.contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
   padding: 30px;
 }
@@ -1771,14 +1762,16 @@ Mision, vision y valores
   margin-bottom: 20px;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: rgb(95,190, 220);;
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: rgb(95, 190, 220);
 }
 
 .contact .php-email-form input {
@@ -1790,13 +1783,12 @@ Mision, vision y valores
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: rgb(95,190, 220);
+  background: rgb(95, 190, 220);
   border: 0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
-  
 }
 
 .contact .php-email-form button[type="submit"]:hover {
@@ -1819,7 +1811,7 @@ Mision, vision y valores
   100% {
     transform: rotate(360deg);
   }
-} 
+}
 
 /*--------------------------------------------------------------
 # Footer
@@ -1828,13 +1820,11 @@ Mision, vision y valores
   padding: 40px 0 30px 0;
   color: white;
   font-size: 14px;
-  background:  rgb(95, 190, 220);
+  background: rgb(95, 190, 220);
 }
-
 
 .footer-top {
   padding: 60px 0 30px 0;
-  
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -1845,7 +1835,6 @@ Mision, vision y valores
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
-  
 }
 
 #footer .footer-top .footer-contact p {
@@ -1858,7 +1847,7 @@ Mision, vision y valores
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  
+
   position: relative;
   padding-bottom: 12px;
 }
@@ -1868,7 +1857,6 @@ Mision, vision y valores
 #footer .footer-top .footer-links ul {
   list-style: none;
   padding-left: 1.5rem !important;
-  
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
@@ -1876,12 +1864,11 @@ Mision, vision y valores
   font-size: 18px;
   line-height: 1;
 }
- .footer-top .footer-contact img {
+.footer-top .footer-contact img {
   width: 30px;
   height: 30px;
   margin-right: 20px;
-  
-} 
+}
 
 #footer .footer-top .footer-links ul li {
   padding: 10px 0;
@@ -1892,12 +1879,11 @@ Mision, vision y valores
   padding-top: 0;
 }
 .footer-top .footer-links ul li a {
-  color:#fff !important;
+  color: #fff !important;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
-
 
 /*--------------------------------------------------------------
 # Footer bottom
@@ -1954,7 +1940,6 @@ Mision, vision y valores
     width: 100%;
     padding-left: 20%;
     font-size: 11px;
-
   }
   .footer-top .footer-contact p {
     font-size: 12px;
@@ -1966,7 +1951,7 @@ Mision, vision y valores
   .footer-top h4 {
     font-size: 22px;
     font-weight: bold;
-    
+
     position: relative;
     padding-bottom: 12px;
   }
@@ -1979,26 +1964,21 @@ Mision, vision y valores
     margin: 0;
   }
   .footer-top .footer-links ul i {
-    
     color: #fff;
     font-size: 12px;
     line-height: 1;
   }
-   .footer-top .footer-contact img {
+  .footer-top .footer-contact img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
-    
-  } 
-
-  
+  }
 }
-@media screen and (min-width: 768px) and (max-width:1198px) {
+@media screen and (min-width: 768px) and (max-width: 1198px) {
   .footer-top {
     width: 100%;
     padding-left: 50px;
     font-size: 11px;
-
   }
   .footer-top .footer-contact p {
     font-size: 14px;
@@ -2010,7 +1990,7 @@ Mision, vision y valores
   .footer-top h4 {
     font-size: 18px;
     font-weight: bold;
-    
+
     position: relative;
     padding-bottom: 12px;
   }
@@ -2023,18 +2003,53 @@ Mision, vision y valores
     margin: 0;
   }
   .footer-top .footer-links ul i {
-    
     color: #fff;
     font-size: 12px;
     line-height: 1;
   }
-   .footer-top .footer-contact img {
+  .footer-top .footer-contact img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
-    
-  } 
-
-  
+  }
 }
 
+/*--------------------------------------------------------------
+# Prev danos
+--------------------------------------------------------------*/
+
+.banner-prev-danos {
+  background: url("../imG/operaciones2.JPG") no-repeat center center;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.fixMargin {
+  margin-top: -100px !important;
+}
+
+.prevTitle {
+  font-weight: 400;
+  color: #008abe;
+  text-align: center;
+}
+
+.prevSubTitle {
+  color: #a3a3a3;
+  font-weight: 100;
+}
+
+.prevListTerceros li {
+  list-style: none;
+}
+
+.prevListTerceros li::before {
+  content: "•";
+  color: #008abe;
+  margin-right: 10px;
+}
