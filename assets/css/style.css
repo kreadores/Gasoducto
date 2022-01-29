@@ -1668,7 +1668,7 @@ Mision, vision y valores
 /*--------------------------------------------------------------
 # Trazado
 --------------------------------------------------------------*/
-#descripcion{
+#descripcion {
   margin-top: 100px !important;
   margin-bottom: 100px !important;
   text-align: center;
@@ -1677,7 +1677,6 @@ Mision, vision y valores
   width: 50%;
   height: 50%;
 } */
-
 
 /*--------------------------------------------------------------
 # Contact
@@ -2052,4 +2051,31 @@ Mision, vision y valores
   content: "•";
   color: #008abe;
   margin-right: 10px;
+}
+
+.pdfIcons .icon {
+  background-color: #fff;
+  border-radius: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+}
+
+.pdfIcons .icon:hover {
+  background-color: #008abe;
+  color: #fff;
+}
+.pdfIcons .icon:hover span {
+  color: #fff;
+}
+
+.pdfIcons .icon i {
+  color: #b30b00;
+}
+.pdfIcons .icon i span {
+  color: #000;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 12px;
 }
