@@ -995,6 +995,138 @@ Mision, vision y valores
     height: 100%;
   }
 }
+.pdfIcons {
+  margin-bottom: 100px;
+}
+
+.pdfIcons .icon-box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px 10px;
+  cursor: pointer;
+  text-align: center;
+  
+  
+}
+.pdfIcons .icon {
+  background-color: #fff;
+  border-radius: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+.pdfIcons .title {
+  font-size: 20px;
+}
+
+.pdfIcons .icon:hover {
+  background-color: #008abe;
+  color: #fff;
+}
+.pdfIcons .icon:hover span {
+  color: #fff;
+}
+
+.pdfIcons .icon i {
+  color: #b30b00;
+}
+.pdfIcons .icon i span {
+  color: #000;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+#contenedor_pdf {
+  display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+@media screen and (max-width: 550px) {
+  
+.pdfIcons .icon-box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 50px 40px;
+  cursor: pointer;
+  text-align: center;
+  
+  
+}
+  .pdfIcons .icon {
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+  
+  }
+  .pdfIcons .title {
+    font-size: 16px;
+  }
+  
+  .pdfIcons .icon:hover {
+    background-color: #008abe;
+    color: #fff;
+  }
+  .pdfIcons .icon:hover span {
+    color: #fff;
+  }
+  
+  .pdfIcons .icon i {
+    color: #b30b00;
+  }
+  .pdfIcons .icon i span {
+    color: #000;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 9px;
+  }
+
+}
+@media screen and (min-width: 990px) {
+  .pdfIcons .icon {
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+  
+  }
+  .pdfIcons .title {
+    font-size: 16px;
+  }
+  
+  .pdfIcons .icon:hover {
+    background-color: #008abe;
+    color: #fff;
+  }
+  .pdfIcons .icon:hover span {
+    color: #fff;
+  }
+  
+  .pdfIcons .icon i {
+    color: #b30b00;
+  }
+  .pdfIcons .icon i span {
+    color: #000;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+
+}
+@media screen and (min-width: 551px) and (max-width: 989px) {
+  
+  .pdfIcons .icon-box {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 50px;
+    cursor: pointer;
+    text-align: center;
+    
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Skills
@@ -2051,31 +2183,4 @@ Mision, vision y valores
   content: "•";
   color: #008abe;
   margin-right: 10px;
-}
-
-.pdfIcons .icon {
-  background-color: #fff;
-  border-radius: 5px;
-  padding-left: 5px;
-  cursor: pointer;
-  text-align: center;
-  padding: 5px;
-}
-
-.pdfIcons .icon:hover {
-  background-color: #008abe;
-  color: #fff;
-}
-.pdfIcons .icon:hover span {
-  color: #fff;
-}
-
-.pdfIcons .icon i {
-  color: #b30b00;
-}
-.pdfIcons .icon i span {
-  color: #000;
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-size: 12px;
 }
