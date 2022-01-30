@@ -1039,8 +1039,8 @@ Mision, vision y valores
 }
 #contenedor_pdf {
   display: flex;
-    justify-content: center !important;
-    align-items: center !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 @media screen and (max-width: 550px) {
   
