@@ -1034,14 +1034,6 @@ Mision, vision y valores
   text-transform: uppercase;
   font-size: 11px;
 }
-<<<<<<< HEAD
-#contenedor_pdf {
-  display: flex;
-  justify-content: center !important;
-  align-items: center !important;
-}
-=======
->>>>>>> 461338f249147474fcbc253374d860f6c14cbd33
 @media screen and (max-width: 550px) {
   .pdfIcons .icon-box {
     background-color: #fff;
@@ -1792,12 +1784,9 @@ Mision, vision y valores
 #descripcion {
   margin-top: 100px !important;
   margin-bottom: 100px !important;
-  text-align: center;
+ 
 }
-/* .interactivo {
-  width: 50%;
-  height: 50%;
-} */
+
 
 /*--------------------------------------------------------------
 # Contact
@@ -1974,9 +1963,12 @@ Mision, vision y valores
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
 }
-#footer .footer-top .footer-links ul {
+.footer-top .footer-links ul {
+  padding-left: 0;
   list-style: none;
-  padding-left: 1.5rem !important;
+  
+ 
+  
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
@@ -2026,7 +2018,7 @@ Mision, vision y valores
 
 #footer-bottom .contact-info i a,
 #footer-bottom .contact-info i span {
-  padding-left: 5px;
+  padding-left: 0px;
   color: rgb(95, 190, 220);
 }
 
