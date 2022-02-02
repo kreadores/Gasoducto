@@ -1939,17 +1939,22 @@ Mision, vision y valores
   margin-left: -23px;
   
 }
+ #medidas{
+  display:flex;
+  flex-direction: column;
+} 
 #medidas p {
-  font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-family: Arial;
   margin-bottom: 30px;
 }
 .response {
-  padding: 50px 0;
-  font-size: bold;
-  font-size: 28px;
+  padding: 10px 10px;
+  font-style: italic;
+  font-size: 24px;
   font-weight: 700;
-  color: rgb(95, 190, 220);
+  color: black;
+  border: 1px solid rgb(95, 190, 220);
 
 }
 
