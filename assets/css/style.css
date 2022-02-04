@@ -144,23 +144,23 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: rgb(95, 190, 220);
+  background: #fff;
   height: 40px;
-  font-size: 14px;
+  font-size: 16px;
   transition: all 0.5s;
-  color: #fff;
+  color: black;
   padding: 0;
 }
 
 #topbar .contact-info i {
   font-style: normal;
-  color: #fff;
+  color: black;
 }
 
 #topbar .contact-info i a,
 #topbar .contact-info i span {
   padding-left: 5px;
-  color: #fff;
+  color:black;
 }
 
 #topbar .contact-info i a {
@@ -175,19 +175,16 @@ h6 {
 }
 
 #topbar .emergency {
-  color: white !important;
+  color: rgb(95, 190, 220);
   line-height: 0;
   transition: 0.3s;
   margin-left: 20px;
 }
 #topbar .emergency h5 {
-  color: white !important;
+  color: rgb(95, 190, 220);
   font-weight: 700;
 }
 
-#topbar a:hover {
-  color: white;
-}
 
 /*--------------------------------------------------------------
 # Header
@@ -196,12 +193,12 @@ h6 {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  height: 95px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  height: 110px;
+  box-shadow: 0px 2px 45px rgba(0, 0, 5, 0.1);
 }
 
 #header.fixed-top {
-  height: 70px;
+  height: 110px;
 }
 
 #header .logo {
@@ -210,11 +207,11 @@ h6 {
   margin: 0;
   padding: 0;
 }
-/* 
+ 
 #header .logo{
   width: 200px;
-  height: 70px;
-} */
+  height: 100px;
+} 
 
 #header .logo a span {
   color: rgb(95, 190, 220);
@@ -256,9 +253,10 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0 3px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   color: #222222;
+  transform: uppercase;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -277,7 +275,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: rgb(95, 190, 220);
+  background-color: #fff;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -479,14 +477,14 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: calc(100vh - 110px);
+  height: calc(70vh - 150px);
   padding: 0;
   overflow: hidden;
   background: #000;
 }
 #hero .carousel-item {
   width: 100%;
-  height: calc(100vh - 110px);
+  height: calc(70vh - 150px);
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
@@ -754,14 +752,16 @@ section {
   background: #cbe0fb;
   right: 0;
   left: 0;
-  bottom: 0;
-  top: 100%;
+  bottom: 100%;
+  top: 0;
   transition: all 0.3s;
   z-index: -1;
 }
 
+
 .icon-box:hover::before {
-  background: url("../img/logo.jpg");
+  /* background: url("../img/logo.jpg"); */
+  background-color: rgb(95, 190, 220);
   top: 0;
   right: 0;
   left: 0;
@@ -769,15 +769,11 @@ section {
   border-radius: 0px;
   opacity: 0.5;
 }
-/* .mvv:hover::before {
-  
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  border-radius: 0px;
-  opacity: 0.5;
-} */
+.icon-box .lead:hover::before {
+  display: block;
+  color: #000;
+}
+
 
 .featured-services .icon {
   margin-bottom: 15px;
