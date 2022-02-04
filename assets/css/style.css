@@ -519,25 +519,61 @@ h6 {
 @media (max-width: 992px) {
   #hero,
   #hero .carousel-item {
-    height: calc(100vh - 70px);
+    height: calc(60vh - 70px);
   }
   #hero .carousel-content.container {
-    padding: 0 50px;
+    padding: 10px 100px;
+  }
+  #hero .carousel-content {
+    text-align: center;
+  }
+  #hero h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #hero p {
+    width: 90%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    color: #fff;
+    font-size: bold;
+    font-size: 22px;
+  }
+  #hero p.longText {
+    width: 100%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    color: #fff;
+    font-size: bold;
+    font-size: 19px;
+
+  }
+  #hero p span {
+    width: 80%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    color: #fff;
+    font-size: bold;
+    font-size: 50px;
+    margin-left: 20px;
   }
 }
+
 #hero h2 {
   color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 900;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
 }
 #hero p {
-  width: 80%;
+  width: 90%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   color: #fff;
   font-size: bold;
-  font-size: 24px;
+  font-size: 22px;
 }
 #hero p span {
   width: 80%;
@@ -630,7 +666,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -731,10 +767,10 @@ section {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
-
 .featured-services .icon-box {
   padding: 30px;
   position: relative;
@@ -745,89 +781,49 @@ section {
   border-radius: 8px;
   z-index: 1;
 }
-
 .featured-services .icon-box::before {
   content: "";
   position: absolute;
   background: #cbe0fb;
   right: 0;
   left: 0;
-  bottom: 100%;
-  top: 0;
+  bottom: 0;
+  top: 100%;
   transition: all 0.3s;
   z-index: -1;
 }
-
-
-.icon-box:hover::before {
-  /* background: url("../img/logo.jpg"); */
-  background-color: rgb(95, 190, 220);
+.featured-services .icon-box:hover::before {
+  background: #106eea;
   top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
   border-radius: 0px;
-  opacity: 0.5;
 }
-.icon-box .lead:hover::before {
-  display: block;
-  color: #000;
-}
-
-
 .featured-services .icon {
   margin-bottom: 15px;
-  display: flex;
-  justify-content: center;
 }
-
-/* .featured-services .icon i {
+.featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: rgb(95,190, 220);;
+  color: #106eea;
   transition: all 0.3s ease-in-out;
-} */
-
+}
 .featured-services .title {
   font-weight: 700;
-  margin-bottom: 20px;
-  font-size: 1.7rem;
-  display: flex;
-  justify-content: center;
-  color: #00519e !important;
-  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
-
-.featured-services h3 {
-  font-size: 2.5rem;
-  text-align: center;
-  color: rgb(95, 190, 220) !important;
+.featured-services .title a {
+  color: #111;
 }
-.featured-services .luis {
-  padding: 30px 0;
-  width: 550px;
-  height: 320px;
-}
-
 .featured-services .description {
-  font-size: 1.2;
-  line-height: 1.5rem;
+  font-size: 15px;
+  line-height: 28px;
   margin-bottom: 0;
 }
-
-/* 
+.featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description {
+  color: #fff;
+}
 .featured-services .icon-box:hover .icon i {
   color: #fff;
-} */
-.featured-services .icon img {
-  width: 8rem;
-}
-
-.featured-services .icon-box:hover .title {
-  color: black !important;
-}
-.featured-services .icon-box:hover .description {
-  color: black !important;
 }
 .featured-services #contact {
   display: flex;
