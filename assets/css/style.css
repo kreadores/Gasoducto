@@ -2027,13 +2027,15 @@ Mision, vision y valores
 
 .prevListTerceros li {
   list-style: none;
+  margin-top: 10px;
 }
 
 .prevListTerceros li::before {
   content: "•";
   color: #008abe;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
+
 
 .parrafoPrevencion {
   font-size: 18px;
