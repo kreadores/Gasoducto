@@ -277,9 +277,9 @@ function formError() {
   }
 
   /**
-   * Testimonials slider
+   * partners slider
    */
-  new Swiper(".testimonials-slider", {
+  new Swiper(".partners-slider", {
     speed: 600,
     loop: true,
     autoplay: {
