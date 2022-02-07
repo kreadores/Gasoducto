@@ -1285,7 +1285,7 @@ Mision, vision y valores
   transition: transform 800ms ease;
 }
 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 /*--------------------------------------------------------------
@@ -2169,15 +2169,31 @@ img:hover {
   .textoPrevio {
     font-size: 80%;
   }
-  .guia .list {
-    display: flex;
-    width: 50%;
-    font-size: 80%;
-    
+  
+  .prevListTerceros ul{
+    width: 100%;
+    padding-left: 0;
   }
-  .guia .icons img {
+  .prevListTerceros li  {
+    list-style: none;
+    margin-top: 5px;
+    font-size: 9px;
     display: flex;
-    width: 40%;
-    height: 60%;
+   justify-content:space-around;
+   list-style-type: none;
+   padding: 5px 0;
+
   }
+  li img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .prevListTerceros li::before {
+    content: "•";
+    color: #008abe;
+    margin-right: 0;
+  }
+  
+  
 }
