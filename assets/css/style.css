@@ -2113,6 +2113,12 @@ Mision, vision y valores
 }
 
 @media screen and (max-width: 990px) {
+  .Daños_icons h3 {
+    font-size: 20px;
+  }
+  .muted{
+    font-size: smaller;
+  }
   .popover__wrapper {
     position: relative;
     display: inline-block;
