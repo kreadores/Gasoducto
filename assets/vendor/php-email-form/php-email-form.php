@@ -1,5 +1,14 @@
 <?php
+<<<<<<< HEAD
 
+=======
+/**
+ * PHP Email Form
+ * Version: 3.2
+ * Website: https://bootstrapmade.com/php-email-form/
+ * Copyright: BootstrapMade.com
+ */
+>>>>>>> 2a7e4fde460ef4c8a1eaccada0e9c67d04e27e85
 
 if ( version_compare(phpversion(), '5.5.0', '<') ) {
   die('PHP version 5.5.0 and up is required. Your PHP version is ' . phpversion());
@@ -232,6 +241,28 @@ class PHP_Email_Form {
 }
 
 
+<<<<<<< HEAD
+=======
+/**
+ * PHPMailer - PHP email creation and transport class.
+ * PHP Version 5.5.
+ *
+ * @see https://github.com/PHPMailer/PHPMailer/ The PHPMailer GitHub project
+ *
+ * @author    Marcus Bointon (Synchro/coolbru) <phpmailer@synchromedia.co.uk>
+ * @author    Jim Jagielski (jimjag) <jimjag@gmail.com>
+ * @author    Andy Prevost (codeworxtech) <codeworxtech@users.sourceforge.net>
+ * @author    Brent R. Matzelle (original founder)
+ * @copyright 2012 - 2020 Marcus Bointon
+ * @copyright 2010 - 2012 Jim Jagielski
+ * @copyright 2004 - 2009 Andy Prevost
+ * @license   http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @note      This program is distributed in the hope that it will be useful - WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.
+ */
+
+>>>>>>> 2a7e4fde460ef4c8a1eaccada0e9c67d04e27e85
 class PHPMailer
 {
     const CHARSET_ASCII = 'us-ascii';
