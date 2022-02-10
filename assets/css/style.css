@@ -1913,114 +1913,72 @@ Mision, vision y valores
   color: #a3a3a3;
   font-weight: 100;
 }
+
+
+/* ICONS SECTION */
+
 .Daños_icons {
-  
   width: 100%;
-  margin: auto;
-}
-.ban {
-  padding: 10px;
-  width: 100px;
-  height: 100px;
-}
-@media screen and (max-width: 550px) {
-
-  .ban {
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-  }
-}
-@media screen and (min-width: 551px) and (max-width: 990px) {
-
-  .ban {
-    padding: 10px;
-    width: 70px;
-    height: 70px;
-  }
+  margin: 100px auto;
 }
 
 
-/* ICONS SECTION AND POPOVER */
-
-
-.popover__wrapper {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 150px;
+.wrapper {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
 }
-.popover__content {
-  font-size: 22px;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  bottom: -200x;
-  right: -100px;
+.text-content {
+  padding: 15px 0;
   text-align: center;
-  transform: translate(0, 10px);
-  padding: 1rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  width: auto;
-}
-.popover__content:before {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  right: calc(50% - 10px);
-  top: -20px;
-  border-style: solid;
-  border-width: 0 10px 10px 10px;
-  border-color: transparent transparent rgb(95, 190, 220) transparent;
-  transition-duration: 0.3s;
-  transition-property: transform;
-}
-.popover__wrapper:hover .popover__content {
-  z-index: 10;
-  opacity: 1;
-  visibility: visible;
-  transform: translate(-50px, 10px);
-   transition: all 0.5s cubic-bezier(0.50, -0.02, 0.2, 0.97); 
+  font-size: 16px;
 }
 
-@media screen and (max-width: 990px) {
+.ban {
+  
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
   .Daños_icons h3 {
-    font-size: 20px;
+    font-size: 21px;
   }
-  .muted{
-    font-size: smaller;
-  }
-  .popover__wrapper {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 100px;
-    
-  }
-  .popover__content:before {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    right: calc(50% - 5px);
-    top: -10px;
-    border-style: solid;
-    border-width: 0 10px 10px 10px;
-     border-color: transparent transparent rgb(95, 190, 220) transparent; 
-    transition-duration: 0.3s;
-    transition-property: transform;
-  }
-  .popover__content {
-    font-size: 14px;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    bottom: -120px;
-    right: -100px;
-    text-align: center;
-    transform: translate(20px, -5px);
-    padding: .2rem;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    width: fit-content;
-  }
+  
+
+
+.ban {
+  width: 60px;
+  height: 60px;
+  text-align: center;
 }
+}
+  
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .Daños_icons h3 {
+    font-size: 22px;
+  }
+ 
+
+ .ban {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+} 
+}
+@media screen and (min-width: 1281px) {
+  .Daños_icons h3 {
+    font-size: 24px;
+  }
 
 
+.ban {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+}
 
