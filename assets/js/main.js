@@ -276,23 +276,23 @@ function formError() {
     });
   }
 
-  /**
-   * partners slider
-   */
-  new Swiper(".partners-slider", {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-  });
+  // /**
+  //  * partners slider
+  //  */
+  // new Swiper(".partners-slider", {
+  //   speed: 600,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false,
+  //   },
+  //   slidesPerView: "auto",
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     type: "bullets",
+  //     clickable: true,
+  //   },
+  // });
 
   /**
    * Porfolio isotope and filter
@@ -388,14 +388,14 @@ function submitForm() {
 
 // popover
 
-$('.info').popover();
-$(':not(#anything)').on('click', function (e) {
-    $('.info').each(function () {
-        //the 'is' for buttons that trigger popups
-        //the 'has' for icons and other elements within a button that triggers a popup
-        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-            $(this).popover('hide');
-            return;
-        }
-    });
-});
+// $('.info').popover();
+// $(':not(#anything)').on('click', function (e) {
+//     $('.info').each(function () {
+//         //the 'is' for buttons that trigger popups
+//         //the 'has' for icons and other elements within a button that triggers a popup
+//         if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+//             $(this).popover('hide');
+//             return;
+//         }
+//     });
+//});

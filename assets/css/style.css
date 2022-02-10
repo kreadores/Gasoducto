@@ -1125,8 +1125,8 @@ Mision, vision y valores
 
 .pdfIcons .icon-box {
   background-color: grey;
-  border-radius: 5px;
-  padding: 30px 10px;
+  
+  padding: 20px 20px;
   cursor: pointer;
   text-align: center;
   
@@ -1485,6 +1485,9 @@ Mision, vision y valores
 #descripcion {
   margin-top: 100px !important;
   margin-bottom: 100px !important;
+}
+.mapa {
+  border-radius: 20px;
 }
 
 /*--------------------------------------------------------------
