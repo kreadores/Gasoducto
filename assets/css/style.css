@@ -148,13 +148,13 @@ h6 {
 
 #topbar .contact-info i {
   font-style: normal;
-  color: black;
+  color: rgb(95, 190, 220);
 }
 
 #topbar .contact-info i a,
 #topbar .contact-info i span {
   padding-left: 5px;
-  color:black;
+  color:rgb(95, 190, 220);
 }
 
 #topbar .contact-info i a {
@@ -535,7 +535,23 @@ font-size: 22px;
   left: 0;
   right: 0;
   overflow: hidden;
+  
 }
+#hero .carousel-item #news::before {
+  content: "";
+  background-color: rgba(13, 30, 45, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+
 #hero .carousel-content {
   text-align: left;
 }
@@ -1233,6 +1249,7 @@ Mision, vision y valores
   width: clamp(var(--flex-flow), 95%, var(--max-width));
   padding-block: var(--space);
   min-width: var(--min-width);
+  
 }
 
 .container__flex-flow {
@@ -1279,45 +1296,6 @@ Mision, vision y valores
   transform: scale(1.3);
 }
 
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------
-.clients {
-  padding: 20px 0;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.849);
-  margin: 50px 20px;
-  border-left: 10px solid rgb(95, 190, 220); 
-  border-right: 10px solid rgb(95, 190, 220);
-}
-.clients h3 {
-  text-align: center;
-  color: rgb(95, 190, 220);
-  margin-top: 0;
-  
-}
-
-.clients img {
-  max-width: 60%;
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 20px 0;
-}
-.clients p {
-  color: #106eea;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.clients img:hover {
-  transform: scale(1.15);
-}
-
-@media (max-width: 768px) {
-  .clients img {
-    max-width: 40%;
-  }
-} */
 
 
 /*--------------------------------------------------------------
@@ -1465,6 +1443,62 @@ Mision, vision y valores
 }
 
 /*--------------------------------------------------------------
+# partners
+--------------------------------------------------------------*/
+  .partners {
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.849);
+ 
+}
+.partners:before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 60%;
+  border: 2px solid rgb(95, 190, 220);
+  margin: 50px 20%;
+ }
+
+.partners:after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 60%;
+  border: 2px solid rgb(95, 190, 220) ;
+  margin: 50px 20%; 
+}
+
+.partners a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners img {
+  max-width: 80%;
+  transition: all 0.4s ease-in-out;
+  padding: 15px 0;
+}
+.partners p {
+  color: #106eea;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners img:hover {
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .partners img {
+    max-width: 40%;
+  }
+} 
+ 
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
@@ -1487,6 +1521,12 @@ Mision, vision y valores
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #b3d1fa;
+}
+.contact .info-box h1 {
+  color: rgb(95, 190, 220);
+  font-weight: 600;
+  margin-left: 5px;
+  
 }
 
 .contact .info-box h3 {
@@ -1662,7 +1702,8 @@ Mision, vision y valores
 .footer-top {
   padding: 40px 0 30px 0;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
   background: rgb(95, 190, 220);
 }
 
@@ -1731,21 +1772,9 @@ Mision, vision y valores
 /*--------------------------------------------------------------
 # Footer bottom
 --------------------------------------------------------------*/
-
-#footer-bottom {
-  background: #fff;
-  height: 70px;
-  transition: all 0.5s;
-  
-  padding: 20px 100px;
-}
-#footer-bottom img {
-  max-width: 90%;
-}
-
-/* 
+ 
 #footer-bottom .contact-info i {
-  font-style: 16px;
+  font-style: 19px;
   color: rgb(95, 190, 220);
 }
 
@@ -1779,7 +1808,7 @@ Mision, vision y valores
 
 #footer-bottom a:hover {
   color: white;
-} */
+} 
 @media screen and (max-width: 550px) {
   .footer-top {
     width: 100%;
@@ -1790,7 +1819,7 @@ Mision, vision y valores
     font-size: 12px;
     line-height: 16px;
     margin-bottom: 20px;
-    font-family: "Roboto", sans-serif;
+    font-family: sans-serif;
     color: #fff;
   }
   .footer-top h4 {
@@ -1818,6 +1847,7 @@ Mision, vision y valores
     height: 30px;
     margin-right: 10px;
   }
+  
 }
 @media screen and (min-width: 768px) and (max-width: 1198px) {
   .footer-top {
@@ -1857,38 +1887,6 @@ Mision, vision y valores
     height: 30px;
     margin-right: 10px;
   }
-}
-
-/*--------------------------------------------------------------
-# RSE
---------------------------------------------------------------*/
-
-.rse-title p {
-  margin: 50px auto 50px auto;
-  font-weight: 700;
-  font-size: 25px;
-  text-align: start;
-}
-.contenido h3 {
-  color:rgb(95, 190, 220);
-  font-size: 22px;
-  font-weight: 700;
-
-}
-@media (max-width:778px) {
-  .rse-title p {
-    margin: 50px auto 50px auto;
-    font-weight: 700;
-    font-size: 19px;
-    text-align: start;
-  }
-  .contenido h3 {
-    color:rgb(95, 190, 220);
-    font-size: 20px;
-    font-weight: 700;
-  
-  }
-
 }
 
 
@@ -1989,5 +1987,37 @@ Mision, vision y valores
   height: 70px;
   text-align: center;
 }
+}
+
+/*--------------------------------------------------------------
+# RSE
+--------------------------------------------------------------*/
+
+.rse-title p {
+  margin: 50px auto 50px auto;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: start;
+}
+.contenido h3 {
+  color:rgb(95, 190, 220);
+  font-size: 22px;
+  font-weight: 700;
+
+}
+@media (max-width:778px) {
+  .rse-title p {
+    margin: 50px auto 50px auto;
+    font-weight: 700;
+    font-size: 19px;
+    text-align: start;
+  }
+  .contenido h3 {
+    color:rgb(95, 190, 220);
+    font-size: 20px;
+    font-weight: 700;
+  
+  }
+
 }
 
