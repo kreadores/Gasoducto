@@ -1052,6 +1052,7 @@ Mision, vision y valores
   position: relative;
   text-align: center;
   background: #106eea;
+  height: 100%;
 }
 .counts .count-box i {
   position: absolute;
@@ -1268,9 +1269,9 @@ Mision, vision y valores
   display: flex;
   min-width: 20rem;
   overflow: hidden;
-  border-radius: clamp(0px, (40vw - var(--full-width)), var(--space));
+  /* border-radius: clamp(0px, (40vw - var(--full-width)), var(--space));
   box-shadow: rgb(40, 40, 40, 0.1) 0px 2px 3px, rgb(20, 20, 20, 0.2) 0px 5px 8px,
-    rgb(0, 0, 0, 0.25) 0px 10px 12px;
+    rgb(0, 0, 0, 0.25) 0px 10px 12px; */
 }
 
 .card > img {
@@ -1523,7 +1524,7 @@ Mision, vision y valores
   border: 2px dotted #b3d1fa;
 }
 .contact .info-box h1 {
-  color: rgb(95, 190, 220);
+  color: rgb(95, 190, 220) !important;
   font-weight: 600;
   margin-left: 5px;
   
