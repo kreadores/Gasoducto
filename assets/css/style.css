@@ -779,6 +779,13 @@ section {
   font-weight: 700;
   color: rgb(95, 190, 220);
 }
+.section-title h4 {
+  margin: 15px 0 0 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(95, 190, 220);
+
+}
 
 .section-title h3 span {
   color: rgb(95, 190, 220);
@@ -1104,24 +1111,24 @@ Mision, vision y valores
     height: 100%;
   }
 }
-.pdfIcons {
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
+/* .pdfIcons {
+  margin-bottom: 10px;
+  display: block;
+  padding: 10px;
 }
 
 .pdfIcons .icon-box {
-  background-color: grey;
-  
   padding: 20px 20px;
+  margin: 10px;
   cursor: pointer;
   text-align: center;
+  background-color: #106eea;
+  width: 30%;
   
   
 }
 .pdfIcons .icon {
-  background-color: #fff;
+ 
   border-radius: 5px;
   padding-left: 10px;
   cursor: pointer;
@@ -1223,7 +1230,7 @@ Mision, vision y valores
     cursor: pointer;
     text-align: center;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Gallery
@@ -1440,9 +1447,47 @@ Mision, vision y valores
   margin-bottom: 100px !important;
 }
 .mapa {
-  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+  border: 2px solid #106eea;
+
+  object-fit: cover;
+  object-position: center right;
+}
+.arrow-right
+{
+  display: block;
+  margin: 0  auto;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid  #106eea;
+  border-left: 2px solid  #106eea;
 }
 
+.arrow-right
+{
+ transform: rotate(135deg);
+}
+.arrow-right::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 45px;
+  background-color: #106eea ;
+  transform: rotate(-45deg) translate(15px, 4px);
+  left: 0;
+  top: 0;
+}
+.icono {
+  font-size: 30px;
+  color: brown;
+  border-radius: 5px;
+  padding-left: 10px;
+  cursor: pointer;
+  text-align: center;
+}
 /*--------------------------------------------------------------
 # partners
 --------------------------------------------------------------*/
@@ -1650,7 +1695,7 @@ Mision, vision y valores
 # Emergencias
 --------------------------------------------------------------*/
 .emergency-list {
-  padding: 10px 10px;
+  padding: 10px 20px;
   list-style-type: none;
   color: black;
   font-size: 16px;
@@ -1661,14 +1706,10 @@ Mision, vision y valores
   margin-left: -23px;
 }
  
-#medidas img {
-  width: auto;
-  height: auto;
-}
 #medidas p {
   font-size: 16px;
   font-family: Arial;
-  margin-bottom: 30px;
+  
 } 
 .response {
   padding: 10px 10px;
@@ -2020,5 +2061,43 @@ Mision, vision y valores
   
   }
 
+}
+
+
+/*------------------------------------------------------------
+Seguridad y cuidado ambiental
+--------------------------------------------------------------*/
+#seguridad h4 {
+  color: rgb(95, 190, 220);
+  text-align: start;
+}
+#subtitle {
+  text-align: center;
+  font-size: bold;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+#seguridad article {
+  line-height: 1.5;
+  font-size: 18px;
+  padding: 0 10px;
+}
+#second {
+  margin: 100px 0;
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
+  padding: 100px 0;
+}
+#seguridad .images {
+  width: 550px;
+  height: 370px;
+}
+#seguridad ul {
+  margin-top: 100px;
+}
+#seguridad ul li {
+  margin-top: 10px;
+ 
 }
 
