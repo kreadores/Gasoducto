@@ -380,3 +380,14 @@ function submitForm() {
 }
 
 
+// VISITOR COUNTER
+
+const Counter = document.getElementById('visitorCounter');
+visitsUpdate();
+function visitsUpdate () {
+  fetch('https://api.countapi.xyz/update/gcds.com.uy/Gasoducto/?amount=1')
+  .then(res => res.json())
+  .then(res => {
+    Counter.innerHTML = res.value;
+  })
+}

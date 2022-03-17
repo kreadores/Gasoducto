@@ -509,7 +509,7 @@ font-size: 22px;
   width: 100%;
   height: calc(70vh - 150px);
   background-size: cover;
-  background-position: top right;
+  background-position: top center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -816,6 +816,7 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
+  height: 100%;
 }
 .featured-services .icon-box::before {
   content: "";
@@ -868,7 +869,7 @@ section {
   font-size: 13px;
   transition: 0.5s;
   margin-top: 10px;
-  padding: 10px 0;
+  padding: 10px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -903,7 +904,7 @@ section {
 .featured-services #contact {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   margin: 10px 0;
   
 }
@@ -914,6 +915,7 @@ section {
 .icon-box:hover .btn {
   background: #fff;
   color: blue;
+  
 }
 
 /*--------------------------------------------------------------
@@ -1111,126 +1113,7 @@ Mision, vision y valores
     height: 100%;
   }
 }
-/* .pdfIcons {
-  margin-bottom: 10px;
-  display: block;
-  padding: 10px;
-}
 
-.pdfIcons .icon-box {
-  padding: 20px 20px;
-  margin: 10px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #106eea;
-  width: 30%;
-  
-  
-}
-.pdfIcons .icon {
- 
-  border-radius: 5px;
-  padding-left: 10px;
-  cursor: pointer;
-  text-align: center;
-}
-.pdfIcons .title {
-  font-size: 20px;
-}
-
-.pdfIcons .icon i {
-  color: #b30b00;
-}
-.pdfIcons .icon i span {
-  color: #000;
-  font-weight: bolder;
-  text-transform: uppercase;
-  font-size: 11px;
-}
-@media screen and (max-width: 550px) {
-  .pdfIcons .title {
-    font-size: 18px;
-  }
-  .pdfIcons {
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .pdfIcons .icon-box {
-    background-color: gray;
-    border-radius: 5px;
-    padding: 50px 40px;
-    cursor: pointer;
-    text-align: center;
-  }
-  .pdfIcons .icon {
-    background-color: #fff;
-    border-radius: 5px;
-    padding-left: 5px;
-    cursor: pointer;
-  }
-  .pdfIcons .title {
-    font-size: 16px;
-  }
-
-  .pdfIcons .icon:hover span {
-    color: #fff;
-  }
-
-  .pdfIcons .icon i {
-    color: #b30b00;
-  }
-  .pdfIcons .icon i span {
-    color: #000;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-size: 9px;
-  }
-}
-@media screen and (min-width: 990px) {
-  .pdfIcons .title {
-    font-size: 19px;
-  }
-  
-  .pdfIcons .icon {
-    background-color: #fff;
-    border-radius: 5px;
-    padding-left: 5px;
-    cursor: pointer;
-  }
-  .pdfIcons .title {
-    font-size: 16px;
-  }
-
-  .pdfIcons .icon i {
-    color: #b30b00;
-  }
-  .pdfIcons .icon i span {
-    color: #000;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-size: 10px;
-  }
-}
-@media screen and (min-width: 551px) and (max-width: 989px) {
-  .pdfIcons {
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .pdfIcons .title {
-    font-size: 14px;
-  }
-  .pdfIcons .icon-box {
-    background-color: gray;
-    border-radius: 5px;
-    padding: 30px 40px;
-    cursor: pointer;
-    text-align: center;
-  }
-} */
 
 /*--------------------------------------------------------------
 # Gallery
@@ -1695,15 +1578,26 @@ Mision, vision y valores
 # Emergencias
 --------------------------------------------------------------*/
 .emergency-list {
-  padding: 10px 20px;
+  padding: 10px 30px;
   list-style-type: none;
   color: black;
-  font-size: 16px;
+  font-size: 17px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .emergency-list li:before {
   content: "\2015";
   position: absolute;
   margin-left: -23px;
+}
+#medidas {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  
+  
 }
  
 #medidas p {
@@ -1966,31 +1860,231 @@ Mision, vision y valores
 
 /* ICONS SECTION */
 
-.Daños_icons {
-  width: 100%;
-  margin: 100px auto;
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
 }
+ .columna {
+  width: 19.666667%;
+} 
 
 
 .wrapper {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- 
+  flex-direction: column;
+
+  align-items: center;
+background: #f6f9fe;
+color: #000;
+height: 100%;
+padding: 10px 10px 20px;
+border: 1px solid rgb(95, 190, 220);
+
 }
-.text-content {
-  padding: 15px 0;
-  text-align: center;
-  font-size: 16px;
+.wrapper p {
+font-size: 19px;
+margin: 20px 0;
+text-align: center;
 }
 
+
 .ban {
+
+margin-top: 20px;
+width: 70px;
+height: 70px;
+}
+
+@media screen and (max-width: 778px) {
+  .columna {
+    width: 100%;
+  }
+
+.wrapper {
+background: #f6f9fe;
+
+color: #000;
+height: 100%;
+padding: 10px 10px 20px;
+border: 1px solid rgb(95, 190, 220);
+
+}
+.wrapper p {
+font-size: 16px;
+margin: 50px 0;
+text-align: start;
+font-weight: bold;
+}
+
+
+.ban {
+margin-top: 20px;
+width: 70px;
+height: 70px;
+}
+}
+@media screen and (min-width: 779px) and (max-width: 1220px) {
+  .columna {
+    width: 50%;
+  }
+
+.wrapper {
+  background: #f6f9fe;
+  color: #000;
+  height: 100%;
+  padding: 0px 10px 30px;
+  border: 1px solid rgb(95, 190, 220);
   
-  width: 70px;
-  height: 70px;
+}
+.wrapper p {
+  font-size: 16px;
+  margin: 30px 0;
+  text-align: start;
+}
+
+
+.ban {
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+}
+}
+
+#damage {
+  background-color: rgb(238, 255, 224);
+}
+.damage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  
+ 
+}
+ .damage::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+} 
+ .damage:hover::before {
+  background: #106eea;
+  top: 0;
+  border-radius: 0px;
+} 
+.damage .description {
+  font-size: 17px;
+  line-height: 20px;
+  margin: 0;
+  color: black;
+}
+.damage.btn-watch-video {
+  font-size: 13px;
+  transition: 0.5s;
+  margin-top: 10px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #106eea ;
+  font-weight: 500;
+  border-radius: 10px;
+ 
+}
+.damage .btn-watch-video:hover {
+  color: #106eea;
+  
+}
+.damage.btn-watch-video i {
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+.damage .icon {
+  margin-top: 15px;
+}
+.damage .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #106eea;
+  transition: all 0.3s ease-in-out;
+}
+.damage.title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
   text-align: center;
 }
+.damage h3 {
+  text-align: center;
+  color: #106eea ;
+}
+.damage.title a {
+  color: #111;
+}
+.damage.description {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #000;
+}
+.damage.btn-watch-video {
+  font-size: 13px;
+  transition: 0.5s;
+  margin-top: 10px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #106eea ;
+  font-weight: 500;
+  border-radius: 10px;
+ 
+}
+.damage.btn-watch-video:hover {
+  color: #106eea;
+  
+}
+.damage.btn-watch-video i {
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+ .damage:hover .title a, .damage .description, .damage.btn-watch-video span {
+  font-weight: 700;
+} 
+.damage:hover .btn-watch-video span i {
+  
+  color: #106eea;
+}
+.damage:hover .icon i {
+  color: #fff;
+}
+
+
+
+
+
+
 @media screen and (max-width: 767px) {
   .Daños_icons h3 {
     font-size: 21px;
@@ -2004,6 +2098,10 @@ Mision, vision y valores
   text-align: center;
 }
 }
+
+
+
+
   
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -2067,9 +2165,16 @@ Mision, vision y valores
 /*------------------------------------------------------------
 Seguridad y cuidado ambiental
 --------------------------------------------------------------*/
+
+#seguridad {
+  background-color: #fff;
+}
 #seguridad h4 {
   color: rgb(95, 190, 220);
   text-align: start;
+}
+.img-fluid.reglas {
+  max-width: 80% !important;
 }
 #subtitle {
   text-align: center;
@@ -2089,7 +2194,8 @@ Seguridad y cuidado ambiental
   border-bottom: 2px solid darkgray;
   padding: 100px 0;
 }
-#seguridad .images {
+
+#seguridad.images {
   width: 550px;
   height: 370px;
 }
@@ -2098,6 +2204,14 @@ Seguridad y cuidado ambiental
 }
 #seguridad ul li {
   margin-top: 10px;
- 
+}
+#seguridad ul li i {
+  font-size: 25px;
+  color: #106eea;
+}
+
+#tercero.imagenes {
+  width: 550px;
+  height: 370px;
 }
 
