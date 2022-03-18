@@ -808,7 +808,7 @@ section {
 # Featured Services
 --------------------------------------------------------------*/
 .featured-services .icon-box {
-  padding: 30px;
+  padding: 40px;
   position: relative;
   overflow: hidden;
   background: #fff;
@@ -865,6 +865,9 @@ section {
   margin-bottom: 0;
   color: #000;
 }
+.featured-services .video {
+  padding-top: 50px;
+}
 .featured-services .btn-watch-video {
   font-size: 13px;
   transition: 0.5s;
@@ -905,7 +908,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  
+  padding: 20px 0;
   
 }
 .icon-box:hover h3 {
@@ -1159,9 +1163,7 @@ Mision, vision y valores
   display: flex;
   min-width: 20rem;
   overflow: hidden;
-  /* border-radius: clamp(0px, (40vw - var(--full-width)), var(--space));
-  box-shadow: rgb(40, 40, 40, 0.1) 0px 2px 3px, rgb(20, 20, 20, 0.2) 0px 5px 8px,
-    rgb(0, 0, 0, 0.25) 0px 10px 12px; */
+
 }
 
 .card > img {
@@ -1339,7 +1341,7 @@ Mision, vision y valores
   object-fit: cover;
   object-position: center right;
 }
-.arrow-right
+/* .arrow-right
 {
   display: block;
   margin: 0  auto;
@@ -1362,14 +1364,20 @@ Mision, vision y valores
   transform: rotate(-45deg) translate(15px, 4px);
   left: 0;
   top: 0;
+} */
+.city {
+  display: flex;
+
+  justify-content: baseline;
 }
 .icono {
   font-size: 30px;
   color: brown;
-  border-radius: 5px;
-  padding-left: 10px;
+ display: flex;
+ 
   cursor: pointer;
-  text-align: center;
+
+
 }
 /*--------------------------------------------------------------
 # partners
@@ -1872,7 +1880,6 @@ Mision, vision y valores
 .wrapper {
   display: flex;
   flex-direction: column;
-
   align-items: center;
 background: #f6f9fe;
 color: #000;
@@ -1950,9 +1957,6 @@ height: 70px;
 }
 }
 
-#damage {
-  background-color: rgb(238, 255, 224);
-}
 .damage {
   display: flex;
   flex-direction: column;
@@ -1966,6 +1970,7 @@ height: 70px;
   border-radius: 8px;
   z-index: 1;
   height: 100%;
+  width: 100%;
   
  
 }
@@ -2173,6 +2178,10 @@ Seguridad y cuidado ambiental
   color: rgb(95, 190, 220);
   text-align: start;
 }
+#reglas {
+  border-bottom: 3px solid darkgray;
+  margin-bottom: 100px;
+}
 .img-fluid.reglas {
   max-width: 80% !important;
 }
@@ -2186,7 +2195,7 @@ Seguridad y cuidado ambiental
 #seguridad article {
   line-height: 1.5;
   font-size: 18px;
-  padding: 0 10px;
+  
 }
 #second {
   margin: 100px 0;
@@ -2210,8 +2219,4 @@ Seguridad y cuidado ambiental
   color: #106eea;
 }
 
-#tercero.imagenes {
-  width: 550px;
-  height: 370px;
-}
 
