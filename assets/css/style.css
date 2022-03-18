@@ -2218,5 +2218,7 @@ Seguridad y cuidado ambiental
   font-size: 25px;
   color: #106eea;
 }
-
+.logoCompany {
+  max-width: 60%;
+}
 
