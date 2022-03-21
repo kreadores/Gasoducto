@@ -2190,7 +2190,7 @@ Seguridad y cuidado ambiental
   font-size: bold;
   color: black;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 #seguridad article {
   line-height: 1.5;
@@ -2210,6 +2210,7 @@ Seguridad y cuidado ambiental
 }
 #seguridad ul {
   margin-top: 100px;
+  list-style-type: none;
 }
 #seguridad ul li {
   margin-top: 10px;
@@ -2217,6 +2218,8 @@ Seguridad y cuidado ambiental
 #seguridad ul li i {
   font-size: 25px;
   color: #106eea;
+  border-radius: 50px;
+  
 }
 .logoCompany {
   max-width: 60%;
