@@ -385,7 +385,7 @@ function submitForm() {
 const Counter = document.getElementById('visitorCounter');
 visitsUpdate();
 function visitsUpdate () {
-  fetch('https://api.countapi.xyz/update/gcds.com.uy/Gasoducto/?amount=1')
+   fetch('https://api.countapi.xyz/get/gcds.com.uy/GCDS') // para iniciar conteo:  https://api.countapi.xyz/update/gcds.com.uy/GCDS/?amount=1
   .then(res => res.json())
   .then(res => {
     Counter.innerHTML = res.value;

@@ -2037,9 +2037,7 @@ height: 70px;
   .Daños_icons h3 {
     font-size: 22px;
   }
-  #alto {
-    padding: 0 30px;
-  }
+  
  
  .ban {
   width: 40px;
@@ -2203,4 +2201,12 @@ Seguridad y cuidado ambiental
   color: black;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+/*----------------- Visitor counter------------------------- */
+
+#visitorCounter {
+  color:  rgb(95, 190, 220);
+  margin-top: 15px;
+  font-size: smaller;
 }
