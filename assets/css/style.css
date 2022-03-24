@@ -199,6 +199,17 @@ h6 {
   margin-left: 5px;
   font-size: 20px;
 }
+#footer-bottom .emergency span {
+  color: rgb(95, 190, 220);
+  margin-left: 5px;
+  font-size: 20px;
+}
+#footer-bottom .emergency h6 {
+  color: rgb(95, 190, 220);
+  font-weight: 700;
+  margin: 10px 10px 10px 10px;
+
+}
 
 @media screen and (max-width: 990px) {
   
@@ -885,6 +896,21 @@ section {
   .section-title p {
     width: 50%;
   }
+}
+@media (max-width: 998px) {
+  
+.section-title h2 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: #106eea;
+  color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
 }
 
 
