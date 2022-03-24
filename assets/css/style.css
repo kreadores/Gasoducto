@@ -186,12 +186,20 @@ h6 {
   color: rgb(95, 190, 220);
   font-style: normal;
   padding-left: 5px;
+  margin: 10px 0 10px 5px;
 
 }
 #topbar .emergency h6 {
   color: rgb(95, 190, 220);
   font-weight: 700;
+  margin: 10px 10px 10px 10px;
 }
+#topbar .emergency span {
+  color: rgb(95, 190, 220);
+  margin-left: 5px;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 990px) {
   
 #topbar .contact-info i a .mail,
@@ -217,12 +225,12 @@ h6 {
   color: rgb(95, 190, 220);
   line-height: 0;
   transition: 0.3s;
-  margin-left: 5px;
+  margin-left: 1px;
 }
 #topbar .form h6 {
   color: rgb(95, 190, 220);
   font-weight: 500;
-  font-size: smaller;
+  font-size: 9px;
 }
 #topbar .form i {
   color: rgb(95, 190, 220);
@@ -233,7 +241,10 @@ h6 {
 #topbar .emergency h6  {
   color: rgb(95, 190, 220);
   font-weight: 500;
-  font-size: smaller;
+  font-size: 9px;
+}
+#topbar .emergency span {
+  font-size: 15px;
 }
 }
 
@@ -648,7 +659,7 @@ align-items: center;
 @media (max-width: 992px) {
   #hero,
   #hero .carousel-item {
-    height: calc(60vh - 70px);
+    height: calc(70vh - 70px);
   }
   #hero .carousel-content.container {
     padding: 10px 100px;
@@ -659,7 +670,7 @@ align-items: center;
   #hero h2 {
     color: #fff;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
   }
   #hero p {
@@ -668,7 +679,7 @@ align-items: center;
     animation-delay: 0.4s;
     color: #fff;
     font-size: bold;
-    font-size: 22px;
+    font-size: 14px;
     display: block;
     
   }
@@ -678,7 +689,7 @@ align-items: center;
     animation-delay: 0.4s;
     color: #fff;
     font-size: bold;
-    font-size: 19px;
+    font-size: 16px;
 
   }
   
@@ -687,9 +698,8 @@ align-items: center;
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
     color: #fff;
-    
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 13px;
+    margin-bottom: 10px;
     display: block;
   }
   #hero .btn-get-started, #hero .btn-watch-video {
@@ -773,13 +783,13 @@ align-items: center;
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 @media (max-height: 500px) {
   #hero,
   #hero .carousel-item {
-    height: 120vh;
+    height: 150vh;
   }
 }
 @media (min-width: 1024px) {
