@@ -781,13 +781,14 @@ align-items: center;
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 861px) {
   #hero h2 {
     font-size: 23px;
   }
   #hero p {
     width: 100%;
     font-size: 19px;
+    text-align: start;
   }
   #hero p span {
     font-size: 35px;
