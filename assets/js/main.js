@@ -1,238 +1,163 @@
-
-$("#contactForm").submit(function (event) {
-  // cancels the form submission
-  event.preventDefault();
-  submitForm();
-});
-function submitForm() {
-  // Initiate Variables With Form Content
-  const name = $("#name").val();
-  const email = $("#email").val();
-  const message = $("#message").val();
-
-  $.ajax({
-    type: "POST",
-    url: "forms/PHP/contacto.php",
-    data: "name=" + name + "&email=" + email + "&message=" + message,
-    success: function (text) {
-      if (text == "success") {
-        formSuccess();
-      }
-    },
-  });
-}
-function formSuccess() {
-  $("#msgSubmit").removeClass("hidden");
-}
-function submitMSG(valid, msg) {
-  var msgClasses;
-  if (valid) {
-    msgClasses = "h3 tada animated text-success";
-  } else {
-    msgClasses = "h3 text-danger";
-  }
-  $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-}
-$("#contactForm")[0].reset();
-submitMSG(true, "Message Submitted!");
-function formError() {
-  $("#contactForm")
-    .removeClass()
-    .addClass("shake animated")
-    .one(
-      "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-      function () {
-        $(this).removeClass();
-      }
-    );
-}
-
-(function () {
+/**
+* Template Name: BizLand - v3.7.0
+* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+(function() {
   "use strict";
 
   /**
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    el = el.trim();
+    el = el.trim()
     if (all) {
-      return [...document.querySelectorAll(el)];
+      return [...document.querySelectorAll(el)]
     } else {
-      return document.querySelector(el);
+      return document.querySelector(el)
     }
-  };
+  }
 
   /**
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all);
+    let selectEl = select(el, all)
     if (selectEl) {
       if (all) {
-        selectEl.forEach((e) => e.addEventListener(type, listener));
+        selectEl.forEach(e => e.addEventListener(type, listener))
       } else {
-        selectEl.addEventListener(type, listener);
+        selectEl.addEventListener(type, listener)
       }
     }
-  };
+  }
 
   /**
-   * Easy on scroll event listener
+   * Easy on scroll event listener 
    */
   const onscroll = (el, listener) => {
-    el.addEventListener("scroll", listener);
-  };
+    el.addEventListener('scroll', listener)
+  }
 
   /**
    * Navbar links active state on scroll
    */
-  let navbarlinks = select("#navbar .scrollto", true);
+  let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
-    let position = window.scrollY + 200;
-    navbarlinks.forEach((navbarlink) => {
-      if (!navbarlink.hash) return;
-      let section = select(navbarlink.hash);
-      if (!section) return;
-      if (
-        position >= section.offsetTop &&
-        position <= section.offsetTop + section.offsetHeight
-      ) {
-        navbarlink.classList.add("active");
+    let position = window.scrollY + 200
+    navbarlinks.forEach(navbarlink => {
+      if (!navbarlink.hash) return
+      let section = select(navbarlink.hash)
+      if (!section) return
+      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        navbarlink.classList.add('active')
       } else {
-        navbarlink.classList.remove("active");
+        navbarlink.classList.remove('active')
       }
-    });
-  };
-  window.addEventListener("load", navbarlinksActive);
-  onscroll(document, navbarlinksActive);
+    })
+  }
+  window.addEventListener('load', navbarlinksActive)
+  onscroll(document, navbarlinksActive)
 
   /**
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let header = select("#header");
-    let offset = header.offsetHeight;
+    let header = select('#header')
+    let offset = header.offsetHeight
 
-    if (!header.classList.contains("header-scrolled")) {
-      offset -= 16;
+    if (!header.classList.contains('header-scrolled')) {
+      offset -= 16
     }
 
-    let elementPos = select(el).offsetTop;
+    let elementPos = select(el).offsetTop
     window.scrollTo({
       top: elementPos - offset,
-      behavior: "smooth",
-    });
-  };
+      behavior: 'smooth'
+    })
+  }
 
   /**
    * Header fixed top on scroll
    */
-  let selectHeader = select("#header");
+  let selectHeader = select('#header')
   if (selectHeader) {
-    let headerOffset = selectHeader.offsetTop;
-    let nextElement = selectHeader.nextElementSibling;
+    let headerOffset = selectHeader.offsetTop
+    let nextElement = selectHeader.nextElementSibling
     const headerFixed = () => {
-      if (headerOffset - window.scrollY <= 0) {
-        selectHeader.classList.add("fixed-top");
-        nextElement.classList.add("scrolled-offset");
+      if ((headerOffset - window.scrollY) <= 0) {
+        selectHeader.classList.add('fixed-top')
+        nextElement.classList.add('scrolled-offset')
       } else {
-        selectHeader.classList.remove("fixed-top");
-        nextElement.classList.remove("scrolled-offset");
+        selectHeader.classList.remove('fixed-top')
+        nextElement.classList.remove('scrolled-offset')
       }
-    };
-    window.addEventListener("load", headerFixed);
-    onscroll(document, headerFixed);
+    }
+    window.addEventListener('load', headerFixed)
+    onscroll(document, headerFixed)
   }
-  
 
   /**
    * Back to top button
    */
-  let backtotop = select(".back-to-top");
+  let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
-        backtotop.classList.add("active");
+        backtotop.classList.add('active')
       } else {
-        backtotop.classList.remove("active");
+        backtotop.classList.remove('active')
       }
-    };
-    window.addEventListener("load", toggleBacktotop);
-    onscroll(document, toggleBacktotop);
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
   }
 
   /**
    * Mobile nav toggle
    */
-  on("click", ".mobile-nav-toggle", function (e) {
-    select("#navbar").classList.toggle("navbar-mobile");
-    this.classList.toggle("bi-list");
-    this.classList.toggle("bi-x");
-  });
-  
+  on('click', '.mobile-nav-toggle', function(e) {
+    select('#navbar').classList.toggle('navbar-mobile')
+    this.classList.toggle('bi-list')
+    this.classList.toggle('bi-x')
+  })
 
   /**
    * Mobile nav dropdowns activate
    */
-  on(
-    "click",
-    ".navbar .dropdown > a",
-    function (e) {
-      if (select("#navbar").classList.contains("navbar-mobile")) {
-        e.preventDefault();
-        this.nextElementSibling.classList.toggle("dropdown-active");
-      }
-    },
-    true
-  );
-
-  //  Hero carousel indicators
-
-  let heroCarouselIndicators = select("#hero-carousel-indicators");
-  let heroCarouselItems = select("#heroCarousel .carousel-item", true);
-
-  heroCarouselItems.forEach((item, index) => {
-    index === 0
-      ? (heroCarouselIndicators.innerHTML +=
-          "<li data-bs-target='#heroCarousel' data-bs-slide-to='" +
-          index +
-          "' class='active'></li>")
-      : (heroCarouselIndicators.innerHTML +=
-          "<li data-bs-target='#heroCarousel' data-bs-slide-to='" +
-          index +
-          "'></li>");
-  });
+  on('click', '.navbar .dropdown > a', function(e) {
+    if (select('#navbar').classList.contains('navbar-mobile')) {
+      e.preventDefault()
+      this.nextElementSibling.classList.toggle('dropdown-active')
+    }
+  }, true)
 
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on(
-    "click",
-    ".scrollto",
-    function (e) {
-      if (select(this.hash)) {
-        e.preventDefault();
+  on('click', '.scrollto', function(e) {
+    if (select(this.hash)) {
+      e.preventDefault()
 
-        let navbar = select("#navbar");
-        if (navbar.classList.contains("navbar-mobile")) {
-          navbar.classList.remove("navbar-mobile");
-          let navbarToggle = select(".mobile-nav-toggle");
-          navbarToggle.classList.toggle("bi-list");
-          navbarToggle.classList.toggle("bi-x");
-        }
-        scrollto(this.hash);
+      let navbar = select('#navbar')
+      if (navbar.classList.contains('navbar-mobile')) {
+        navbar.classList.remove('navbar-mobile')
+        let navbarToggle = select('.mobile-nav-toggle')
+        navbarToggle.classList.toggle('bi-list')
+        navbarToggle.classList.toggle('bi-x')
       }
-    },
-    true
-  );
+      scrollto(this.hash)
+    }
+  }, true)
 
   /**
    * Scroll with ofset on page load with hash links in the url
    */
-  window.addEventListener("load", () => {
+  window.addEventListener('load', () => {
     if (window.location.hash) {
       if (select(window.location.hash)) {
-        scrollto(window.location.hash);
+        scrollto(window.location.hash)
       }
     }
   });
@@ -240,10 +165,10 @@ function formError() {
   /**
    * Preloader
    */
-  let preloader = select("#preloader");
+  let preloader = select('#preloader');
   if (preloader) {
-    window.addEventListener("load", () => {
-      preloader.remove();
+    window.addEventListener('load', () => {
+      preloader.remove()
     });
   }
 
@@ -251,124 +176,108 @@ function formError() {
    * Initiate glightbox
    */
   const glightbox = GLightbox({
-    selector: ".glightbox",
+    selector: '.glightbox'
   });
 
   /**
    * Skills animation
    */
-  let skilsContent = select(".skills-content");
+  let skilsContent = select('.skills-content');
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
-      offset: "80%",
-      handler: function (direction) {
-        let progress = select(".progress .progress-bar", true);
+      offset: '80%',
+      handler: function(direction) {
+        let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
-          el.style.width = el.getAttribute("aria-valuenow") + "%";
+          el.style.width = el.getAttribute('aria-valuenow') + '%'
         });
-      },
-    });
+      }
+    })
   }
 
   /**
-   * partners slider
+   * Testimonials slider
    */
-  new Swiper(".partners-slider", {
+  new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false,
+      disableOnInteraction: false
     },
-    slidesPerView: "auto",
+    slidesPerView: 'auto',
     pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
   });
 
   /**
    * Porfolio isotope and filter
    */
-  window.addEventListener("load", () => {
-    let portfolioContainer = select(".portfolio-container");
+  window.addEventListener('load', () => {
+    let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: ".portfolio-item",
+        itemSelector: '.portfolio-item'
       });
 
-      let portfolioFilters = select("#portfolio-flters li", true);
+      let portfolioFilters = select('#portfolio-flters li', true);
 
-      on(
-        "click",
-        "#portfolio-flters li",
-        function (e) {
-          e.preventDefault();
-          portfolioFilters.forEach(function (el) {
-            el.classList.remove("filter-active");
-          });
-          this.classList.add("filter-active");
+      on('click', '#portfolio-flters li', function(e) {
+        e.preventDefault();
+        portfolioFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
 
-          portfolioIsotope.arrange({
-            filter: this.getAttribute("data-filter"),
-          });
-          portfolioIsotope.on("arrangeComplete", function () {
-            AOS.refresh();
-          });
-        },
-        true
-      );
+        portfolioIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        portfolioIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+      }, true);
+    }
+
+  });
+
+  /**
+   * Initiate portfolio lightbox 
+   */
+  const portfolioLightbox = GLightbox({
+    selector: '.portfolio-lightbox'
+  });
+
+  /**
+   * Portfolio details slider
+   */
+  new Swiper('.portfolio-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
     }
   });
 
-  
-
- 
   /**
    * Animation on scroll
    */
-  window.addEventListener("load", () => {
+  window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,
-      easing: "ease-in-out",
+      easing: 'ease-in-out',
       once: true,
-      mirror: false,
-    });
+      mirror: false
+    })
   });
-})();
-$(document).ready(function () {
-  $("#contactForm").submit(function (event) {
-    submitForm();
-    return false;
-  });
-});
-function submitForm() {
-  $.ajax({
-    type: "POST",
-    url: "saveContact.php",
-    cache: false,
-    data: $("form#contactForm").serialize(),
-    success: function (response) {
-      $("#contact").html(response);
-      $("#contact-modal").modal("hide");
-    },
-    error: function () {
-      alert("Error");
-    },
-  });
-}
 
-
-// VISITOR COUNTER
-
-const Counter = document.getElementById('visitorCounter');
-visitsUpdate();
-function visitsUpdate () {
-   fetch('https://api.countapi.xyz/get/gcds.com.uy/GCDS') // para iniciar conteo:  https://api.countapi.xyz/update/gcds.com.uy/GCDS/?amount=1
-  .then(res => res.json())
-  .then(res => {
-    Counter.innerHTML = res.value;
-  })
-}
+})()
