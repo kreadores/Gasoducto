@@ -194,13 +194,8 @@ h6 {
 
 }
 
-@media screen and (max-width: 990px) {
+ @media screen and (max-width: 990px) {
   
-#topbar .contact-info i a .mail,
-#topbar .contact-info i span .phone {
-  display: none;
-}
-
 #topbar {
   background: #fff;
   height: 40px;
@@ -238,7 +233,7 @@ h6 {
   font-size: 9px;
 }
 #topbar .emergency span {
-  font-size: 15px;
+  font-size: 18px;
 }
 }
 
@@ -869,6 +864,11 @@ section {
   color: rgb(95, 190, 220);
 }
 
+.section-title span {
+  font-weight: bolder;
+  
+}
+
 .section-title p {
   margin: 15px auto 0 auto; 
   font-weight: 600;
@@ -1006,6 +1006,10 @@ section {
   padding: 20px 0;
   
 }
+.icon-box:hover h4 {
+  color: #fff !important;
+
+}
 .icon-box:hover h3 {
   color: #fff !important;
   font-weight: 700;
@@ -1049,6 +1053,10 @@ section {
   margin-right: 15px;
   color: rgb(95, 190, 220);
   border-radius: 50px;
+}
+.canos {
+  width: 85%;
+  height: 85%;
 }
 
 .about .content ul h5 {
@@ -1353,6 +1361,8 @@ Mision, vision y valores
   transition: ease-in-out 0.3s;
 }
 
+
+
 .services p {
   line-height: 18px;
   font-size: 19px;
@@ -1421,9 +1431,9 @@ Mision, vision y valores
   margin-bottom: 100px !important;
 }
 .mapa {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 460px;
+  height: 300px;
+  border-radius: 10%;
   margin: 20px;
   border: 2px solid #106eea;
 
@@ -2253,7 +2263,7 @@ Seguridad y cuidado ambiental
 /*----------------- Visitor counter------------------------- */
 
 #visitorCounter {
-  color:  rgb(95, 190, 220);
+  color: transparent;
   margin-top: 15px;
   font-size: smaller;
 }

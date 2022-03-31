@@ -30,16 +30,15 @@
 
 <body>  
   <section id="topbar" class="d-flex align-items-center">
-    <div class="container-fluid d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-none d-md-flex align-items-center ">
-        <i class="bi bi-envelope d-flex align-items-center mail"><a href="mailto:info@gcds.com.uy"> info@gcds.com.uy</a></i>
+    <div class="container d-flex justify-content-center justify-content-between">
+      <div class="contact-info d-flex align-items-center ">
         <i class="bi bi-phone d-flex align-items-center ms-4 phone"><span> (598) 2900 0340</span></i>
       </div>
-      <div class="form d-flex align-items-center">
+      <!-- <div class="form d-flex align-items-center">
         <a target="blank" href="https://survey123.arcgis.com/share/506af8f3d15344c183a8b53235993611"><h6 style="margin: 10px 0 10px 5px;">INTERFERENCIA A TERCEROS</h6> </a>
         <i class=" bx bx-edit" style="margin: 10px 0 10px 5px;"></i>
         
-      </div>
+      </div> -->
       <div class="emergency d-flex align-items-center">
         <h6>EMERGENCIAS </h6>
         <i class=" bx bx-phone-call"></i>
@@ -47,7 +46,6 @@
       </div>
     </div>
   </section>
-
   
   <header id="header" class="d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
@@ -86,7 +84,7 @@
             <div class="section-title">
                 <h2>Emergencias</h2>
                 <h3>Medidas de Seguridad</h3>
-                <p>GCDS responde de manera inmediata las llamadas que se realizan a nuestro número de emergencias gratuito 0800-4321, con atención 24 horas al día, los 7 días de la semana. </p>  
+                <p>GCDS responde de manera inmediata las llamadas que se realizan a nuestro número de emergencias gratuito <span>0800-4321</span> , con atención 24 horas al día, los 7 días de la semana. </p>  
 
             </div>
             
@@ -106,7 +104,7 @@
                         <li>Abandone la zona de inmediato, no utilice nada que pueda generar una fuente de ignición
                             (motores, celulares, etc.)</li>
                         <li>Diríjase a un lugar seguro, preferiblemente en dirección opuesta al viento</li>
-                        <li>Llame inmediatamente a nuestro número de emergencia <span> 0800-4321</span> </li>
+                        <li>Llame inmediatamente a nuestro número de emergencia <span style="font-weight: bolder;"> 0800-4321</span> </li>
                         <li>Advierta a otros de mantenerse alejados del sitio. </li>
                     </ul>
                 </div>
@@ -180,19 +178,21 @@
         </div>
       </div>
     </div>
-  <section id="footer-bottom" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com"> info@gcds.com.uy</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span> (598) 2900 0340</span></i>
+    <section id="topbar" class="d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-between">
+        <div class="contact-info d-flex align-items-center ">
+          
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span> (598) 2900 0340</span></i>
+        </div>
+        <p id="visitorCounter">0</p> 
+      
+        <div class="emergency d-flex align-items-center">
+          <h6>EMERGENCIAS</h6>
+          <i class="bx bx-phone-call"></i>
+          <span> 0800 4321</span>
+        </div>
       </div>
-      <div class="emergency d-none d-md-flex align-items-center">
-        <h6>EMERGENCIAS</h6>
-        <i class="bx bx-phone-call"></i>
-        <span> 0800 4321</span>
-      </div>
-    </div>
-  </section>
+    </section>
   
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
