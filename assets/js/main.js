@@ -1,9 +1,5 @@
-/**
-* Template Name: BizLand - v3.7.0
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
+
 (function() {
   "use strict";
 
@@ -213,6 +209,18 @@
       clickable: true
     }
   });
+  /**
+   * Hero carousel indicators
+   */
+   let heroCarouselIndicators = select("#hero-carousel-indicators")
+   let heroCarouselItems = select('#heroCarousel .carousel-item', true)
+ 
+   heroCarouselItems.forEach((item, index) => {
+     (index === 0) ?
+     heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
+       heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
+   });
+ 
 
   /**
    * Porfolio isotope and filter
