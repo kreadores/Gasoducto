@@ -588,7 +588,7 @@ align-items: center;
   overflow: hidden;
   
 }
-#hero .carousel-item #news::before {
+#hero .carousel-item::before {
   content: "";
   background-color: rgba(13, 30, 45, 0.6);
   position: absolute;
@@ -608,7 +608,7 @@ align-items: center;
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
@@ -911,6 +911,7 @@ section {
   border-radius: 8px;
   z-index: 1;
   height: 100%;
+  width: 100%;
 }
 .featured-services .icon-box::before {
   content: "";
@@ -1204,15 +1205,14 @@ Mision, vision y valores
 # Operaciones
 --------------------------------------------------------------*/
 
-#operaciones .operaciones {
-  width: 540px;
-  height: 300px;
+
+.operaciones_texto {
+  font-size: 15px;
+  
+  padding: 0 35px 0 35px;
+
 }
-#ops_row {
-  display: flex;
-  align-items: center !important;
-  justify-content: center !important;
-}
+
 @media screen and (max-width: 1200px) {
   #operaciones .operaciones {
     width: 100%;
@@ -1431,42 +1431,12 @@ Mision, vision y valores
   margin-bottom: 100px !important;
 }
 .mapa {
-  width: 460px;
-  height: 300px;
-  border-radius: 10%;
-  margin: 20px;
-  border: 2px solid #106eea;
-
+  margin: 50px 0;
+  border: 1px solid rgb(95, 190, 220);
   object-fit: cover;
-  object-position: center right;
 }
-/* .arrow-right
-{
-  display: block;
-  margin: 0  auto;
-  width: 20px;
-  height: 20px;
-  border-top: 2px solid  #106eea;
-  border-left: 2px solid  #106eea;
-}
-
-.arrow-right
-{
- transform: rotate(135deg);
-}
-.arrow-right::after {
-  content: "";
-  display: block;
-  width: 3px;
-  height: 45px;
-  background-color: #106eea ;
-  transform: rotate(-45deg) translate(15px, 4px);
-  left: 0;
-  top: 0;
-} */
 .city {
   display: flex;
-  
 }
 
 .icono i {
@@ -1693,17 +1663,17 @@ Mision, vision y valores
   flex-direction: column;
   justify-content: center;
 }
-/* .emergency-list li:before {
-  content: "\2015";
-  position: absolute;
-  margin-left: -23px;
-} */
+
 #medidas {
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
   
   
+}
+.foto-grande {
+  box-shadow: rgb(20, 20, 20, 0.1) 10px 10px 3px, rgb(20, 20, 20, 0.1) 7px 7px 10px,
+    rgb(20, 20, 20, 0.15) 5px 10px 12px;
 }
  
 #medidas p {
@@ -1742,73 +1712,96 @@ Mision, vision y valores
 # Footer
 --------------------------------------------------------------*/
 .footer-top {
-  padding: 40px 0 30px 0;
+ 
+  padding: 40px 0 0 0; 
   color: white;
-  font-size: 15px;
-  font-weight: bold;
   background: rgb(95, 190, 220);
 }
 
-.footer-top {
-  padding: 60px 0 30px 0;
-}
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-#footer .footer-top .footer-contact h3 {
-  font-size: 24px;
-  margin: 0 0 15px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 700;
-}
-
-#footer .footer-top .footer-contact p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-}
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-
-  position: relative;
-  padding-bottom: 12px;
-}
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-.footer-top .footer-links ul {
-  padding-left: 0;
-  list-style: none;
-}
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1;
-}
-.footer-top .footer-contact img {
+.footer-contact img {
   width: 30px;
   height: 30px;
-  margin-right: 20px;
+  margin-right: 15px;
+}
+.footer-contact h4 {
+  font-size: 19px;
+  font-weight: bold;
+  padding-bottom: 10px;
+} 
+
+
+.footer-contact p {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 0;
+  color: #fff;
+}
+.footer-links h4 {
+  font-size: 19px;
+  font-weight: bold;
+  
+}
+ 
+.footer-links ul {
+  padding-left: 0;
+  list-style: none;
+  font-size: 15px;
 }
 
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-#footer .footer-top .footer-links ul li:first-child {
+.footer-links ul li:first-child {
   padding-top: 0;
-}
-.footer-top .footer-links ul li a {
+} 
+.footer-links ul li a {
+  font-size: 14px;
   color: #fff !important;
   transition: 0.3s;
   display: inline-block;
-  line-height: 1;
+  
+}
+@media screen and (min-width: 769px) and (max-width: 1198px) {
+  .footer-top {
+    width: 100%;
+  }
+  .footer-contact h4 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  } 
+  .footer-contact p {
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  .footer-links h4 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding-left: .5rem !important;
+    margin: 0;
+  }
+  .footer-top .footer-links ul i {
+    color: #fff;
+    font-size: 10px;
+    
+  }
+  .footer-top .footer-links ul a {
+    color: #fff;
+    font-size: 12px;
+    
+  }
+  .footer-contact img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1851,85 +1844,53 @@ Mision, vision y valores
 #footer-bottom a:hover {
   color: white;
 } 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   .footer-top {
     width: 100%;
-    padding-left: 20%;
+  }
+  .footer-contact h4 {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  } 
+  .footer-contact p {
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-contact img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  .footer-links h4 {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+   
+  .footer-links ul {
+    padding-left: 0;
+    list-style: none;
     font-size: 11px;
   }
-  .footer-top .footer-contact p {
-    font-size: 12px;
-    line-height: 16px;
-    margin-bottom: 20px;
-    font-family: sans-serif;
+  .footer-links ul i {
+    padding-right: 2px;
     color: #fff;
-  }
-  .footer-top h4 {
-    font-size: 22px;
-    font-weight: bold;
-
-    position: relative;
-    padding-bottom: 12px;
-  }
-  .footer-top .footer-links {
-    margin-bottom: 30px;
-  }
-  .footer-top .footer-links ul {
-    list-style: none;
-    padding-left: 1rem !important;
-    margin: 0;
-  }
-  .footer-top .footer-links ul i {
-    color: #fff;
-    font-size: 12px;
+    font-size: 9px;
     line-height: 1;
   }
-  .footer-top .footer-contact img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+  
+  .footer-links ul li {
+    display: flex;
+    align-items: center;
+    
   }
   
 }
-@media screen and (min-width: 768px) and (max-width: 1198px) {
-  .footer-top {
-    width: 100%;
-    padding-left: 50px;
-    font-size: 11px;
-  }
-  .footer-top .footer-contact p {
-    font-size: 14px;
-    line-height: 16px;
-    margin-bottom: 20px;
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-  }
-  .footer-top h4 {
-    font-size: 18px;
-    font-weight: bold;
 
-    position: relative;
-    padding-bottom: 12px;
-  }
-  .footer-top .footer-links {
-    margin-bottom: 30px;
-  }
-  .footer-top .footer-links ul {
-    list-style: none;
-    padding-left: 1rem !important;
-    margin: 0;
-  }
-  .footer-top .footer-links ul i {
-    color: #fff;
-    font-size: 12px;
-    line-height: 1;
-  }
-  .footer-top .footer-contact img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-}
 
 
 /*--------------------------------------------------------------
@@ -2152,7 +2113,15 @@ Seguridad y cuidado ambiental
 #seguridad article {
   line-height: 1.5;
   font-size: 18px;
+  text-align: justify;
   
+}
+#seguridad p {
+  text-align: justify;
+}
+#txt_security {
+  text-align: center;
+  text-align: justify;
 }
 
 #seguridad {
@@ -2162,8 +2131,6 @@ Seguridad y cuidado ambiental
   color: rgb(95, 190, 220);
   text-align: start;
 }
-
-
 
  #second {
   margin-top: 100px;

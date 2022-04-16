@@ -289,3 +289,18 @@
   });
 
 })()
+
+const contador = document.getElementById('visitorCounter');
+updateVisits();
+
+function updateVisits () {
+  fetch('https://api.countapi.xyz/get/gcds.com.uy/GasoductoVisits') 
+  .then (res =>res.json())
+  .then(res => {
+    contador.innerHTML = res.value
+  });
+}
+
+// actualizar el contador 
+// cambiar a https://api.countapi.xyz/update/gcds.com.uy/GasoductoVisits/?amount=1  en el momento en que la pagina salga a produccion asi comienza con el conteo de
+//visitas 
