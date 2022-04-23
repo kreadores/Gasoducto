@@ -615,7 +615,7 @@ align-items: center;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 28px;
+  padding: 10px 15px;
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
@@ -652,7 +652,7 @@ align-items: center;
     height: calc(70vh - 70px);
   }
   #hero .carousel-content.container {
-    padding: 10px 100px;
+    padding: 20px 80px;
   }
   #hero .carousel-content {
     text-align: center;
@@ -660,8 +660,8 @@ align-items: center;
   #hero h2 {
     color: #fff;
     margin-bottom: 10px;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
   }
   #hero p {
     width: 100%;
@@ -681,6 +681,9 @@ align-items: center;
     font-size: bold;
     font-size: 16px;
 
+  }
+  #hero .central {
+    justify-content: center;
   }
   
   #hero p span {
@@ -702,7 +705,7 @@ align-items: center;
     font-size: 12px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 10px 10px;
+    padding: 5px 10px;
     border-radius: 4px;
     transition: 0.5s;
     color: #fff;
@@ -773,30 +776,53 @@ align-items: center;
 
 @media (max-width: 861px) {
   #hero h2 {
-    font-size: 23px;
+    font-size: 20px;
   }
   #hero p {
     width: 100%;
-    font-size: 19px;
-    text-align: start;
+    font-size: 16px;
+    text-align: center;
   }
   #hero p span {
     font-size: 35px;
-    text-align: start;
+    text-align: center;
   }
   #hero .btn-get-started {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
     font-size: 10px;
-    letter-spacing: 1px;
+    padding: 5px 10px;
     display: inline-block;
-    padding: 5px 20px;
     border-radius: 4px;
     transition: 0.5s;
     color: #fff;
     background: #106eea;
   }
+  #hero .carousel-content {
+    text-align: center;
+  }
+  #hero.btn-get-started.mapa {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #106eea;
+     margin: auto; 
+  }
+  #hero .central span {
+    font-size: 9px;
+  }
+  #hero .btn-watch-video i {
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+    line-height: 0;
+    margin-left: 10px;
+    
+}
 }
 @media (max-height: 500px) {
   #hero,
@@ -929,6 +955,62 @@ section {
   background: #106eea;
   top: 0;
   border-radius: 0px;
+}
+.icon-box_form button {
+  color: #106eea;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.icon-box_form:hover button {
+  color: #fff;
+  background-color: #106eea;
+  border-radius: 10px;
+}
+.featured-services .icon-box_form {
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  background: #106eea;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+.featured-services .icon-box_form::before {
+  content: "";
+  position: absolute;
+  background: #106eea;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.featured-services .icon-box_form:hover::before {
+  background: #fff;
+  top: 0;
+  border-radius: 0px;
+}
+.featured-services .icon-box_form .title {
+  color: #fff;
+}
+.featured-services .icon-box_form .icon i {
+  color: #fff;
+}
+.featured-services .icon-box_form:hover .icon i {
+  color: #106eea;
+}
+.featured-services .icon-box_form .description {
+  color: #fff;
+}
+.featured-services .icon-box_form:hover .title {
+  color: #106eea;
+}
+.featured-services .icon-box_form:hover .description{
+  color: #106eea;
 }
 .featured-services .icon {
   margin-bottom: 15px;
@@ -1200,6 +1282,7 @@ Mision, vision y valores
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #fff;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -2121,10 +2204,6 @@ Seguridad y cuidado ambiental
 #seguridad p {
   text-align: justify;
 }
-#txt_security {
-  text-align: center;
-  text-align: justify;
-}
 
 #seguridad {
   background-color: #fff;
@@ -2164,6 +2243,9 @@ Seguridad y cuidado ambiental
 #seguridad ul li {
   margin-top: 5px;
   font-size: 16px;
+}
+.procesos {
+  --bs-gutter-y: 1rem;
 }
 
 @media screen and (max-width: 1400px) {

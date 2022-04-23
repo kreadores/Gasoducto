@@ -302,5 +302,5 @@ function updateVisits () {
 }
 
 // actualizar el contador 
-// cambiar a https://api.countapi.xyz/update/gcds.com.uy/GasoductoVisits/?amount=1  en el momento en que la pagina salga a produccion asi comienza con el conteo de
+// cambiar la URL a https://api.countapi.xyz/update/gcds.com.uy/GasoductoVisits/?amount=1  en el momento en que la pagina salga a produccion asi comienza con el conteo de
 //visitas 
